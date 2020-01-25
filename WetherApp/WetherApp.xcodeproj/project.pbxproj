@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F11E3539EC072193167E6D83 /* Pods_WetherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F1C208BD11F59F5AF25F94 /* Pods_WetherApp.framework */; };
+		F4617B8823DCA38600DB08B7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4617B7823DCA38600DB08B7 /* TabBar.storyboard */; };
+		F4617B8923DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B7A23DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift */; };
+		F4617B8A23DCA38600DB08B7 /* TabBarModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B7C23DCA38600DB08B7 /* TabBarModulePresenter.swift */; };
+		F4617B8B23DCA38600DB08B7 /* TabBarModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B7E23DCA38600DB08B7 /* TabBarModuleView.swift */; };
+		F4617B8C23DCA38600DB08B7 /* TabBarModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B7F23DCA38600DB08B7 /* TabBarModuleViewInput.swift */; };
+		F4617B8D23DCA38600DB08B7 /* TabBarModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B8023DCA38600DB08B7 /* TabBarModuleViewOutput.swift */; };
+		F4617B8E23DCA38600DB08B7 /* TabBarModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B8223DCA38600DB08B7 /* TabBarModuleInteractorInput.swift */; };
+		F4617B8F23DCA38600DB08B7 /* TabBarModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B8323DCA38600DB08B7 /* TabBarModuleInteractorOutput.swift */; };
+		F4617B9023DCA38600DB08B7 /* TabBarModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B8423DCA38600DB08B7 /* TabBarModuleInteractor.swift */; };
+		F4617B9123DCA38600DB08B7 /* TabBarModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B8623DCA38600DB08B7 /* TabBarModuleRouterInput.swift */; };
+		F4617B9223DCA38600DB08B7 /* TabBarModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B8723DCA38600DB08B7 /* TabBarModuleRouter.swift */; };
+		F4617BA723DCA7D600DB08B7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4617B9723DCA7D600DB08B7 /* Home.storyboard */; };
+		F4617BA823DCA7D600DB08B7 /* HomeModuleAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B9923DCA7D600DB08B7 /* HomeModuleAssemblyContainer.swift */; };
+		F4617BA923DCA7D600DB08B7 /* HomeModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B9B23DCA7D600DB08B7 /* HomeModulePresenter.swift */; };
+		F4617BAA23DCA7D600DB08B7 /* HomeModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B9D23DCA7D600DB08B7 /* HomeModuleViewInput.swift */; };
+		F4617BAB23DCA7D600DB08B7 /* HomeModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B9E23DCA7D600DB08B7 /* HomeModuleViewOutput.swift */; };
+		F4617BAC23DCA7D600DB08B7 /* HomeModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B9F23DCA7D600DB08B7 /* HomeModuleView.swift */; };
+		F4617BAD23DCA7D600DB08B7 /* HomeModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BA123DCA7D600DB08B7 /* HomeModuleInteractorInput.swift */; };
+		F4617BAE23DCA7D600DB08B7 /* HomeModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BA223DCA7D600DB08B7 /* HomeModuleInteractor.swift */; };
+		F4617BAF23DCA7D600DB08B7 /* HomeModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BA323DCA7D600DB08B7 /* HomeModuleInteractorOutput.swift */; };
+		F4617BB023DCA7D600DB08B7 /* HomeModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BA523DCA7D600DB08B7 /* HomeModuleRouter.swift */; };
+		F4617BB123DCA7D600DB08B7 /* HomeModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BA623DCA7D600DB08B7 /* HomeModuleRouterInput.swift */; };
+		F4617BC723DCA96D00DB08B7 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4617BB723DCA96D00DB08B7 /* Map.storyboard */; };
+		F4617BC823DCA96D00DB08B7 /* MapModuleAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BB923DCA96D00DB08B7 /* MapModuleAssemblyContainer.swift */; };
+		F4617BC923DCA96D00DB08B7 /* MapModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BBB23DCA96D00DB08B7 /* MapModulePresenter.swift */; };
+		F4617BCA23DCA96D00DB08B7 /* MapModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BBD23DCA96D00DB08B7 /* MapModuleViewOutput.swift */; };
+		F4617BCB23DCA96D00DB08B7 /* MapModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BBE23DCA96D00DB08B7 /* MapModuleView.swift */; };
+		F4617BCC23DCA96D00DB08B7 /* MapModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BBF23DCA96D00DB08B7 /* MapModuleViewInput.swift */; };
+		F4617BCD23DCA96D00DB08B7 /* MapModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BC123DCA96D00DB08B7 /* MapModuleInteractorInput.swift */; };
+		F4617BCE23DCA96D00DB08B7 /* MapModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BC223DCA96D00DB08B7 /* MapModuleInteractor.swift */; };
+		F4617BCF23DCA96D00DB08B7 /* MapModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BC323DCA96D00DB08B7 /* MapModuleInteractorOutput.swift */; };
+		F4617BD023DCA96D00DB08B7 /* MapModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BC523DCA96D00DB08B7 /* MapModuleRouterInput.swift */; };
+		F4617BD123DCA96D00DB08B7 /* MapModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BC623DCA96D00DB08B7 /* MapModuleRouter.swift */; };
+		F4617BE723DCAAAB00DB08B7 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4617BD723DCAAAB00DB08B7 /* Search.storyboard */; };
+		F4617BE823DCAAAB00DB08B7 /* SearchModuleAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BD923DCAAAB00DB08B7 /* SearchModuleAssemblyContainer.swift */; };
+		F4617BE923DCAAAB00DB08B7 /* SearchModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BDB23DCAAAB00DB08B7 /* SearchModulePresenter.swift */; };
+		F4617BEA23DCAAAB00DB08B7 /* SearchModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BDD23DCAAAB00DB08B7 /* SearchModuleView.swift */; };
+		F4617BEB23DCAAAB00DB08B7 /* SearchModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BDE23DCAAAB00DB08B7 /* SearchModuleViewOutput.swift */; };
+		F4617BEC23DCAAAB00DB08B7 /* SearchModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BDF23DCAAAB00DB08B7 /* SearchModuleViewInput.swift */; };
+		F4617BED23DCAAAB00DB08B7 /* SearchModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE123DCAAAB00DB08B7 /* SearchModuleInteractorOutput.swift */; };
+		F4617BEE23DCAAAB00DB08B7 /* SearchModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE223DCAAAB00DB08B7 /* SearchModuleInteractor.swift */; };
+		F4617BEF23DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE323DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift */; };
+		F4617BF023DCAAAB00DB08B7 /* SearchModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE523DCAAAB00DB08B7 /* SearchModuleRouterInput.swift */; };
+		F4617BF123DCAAAB00DB08B7 /* SearchModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE623DCAAAB00DB08B7 /* SearchModuleRouter.swift */; };
+		F47D290923DC9BA1008F4ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D290823DC9BA1008F4ABE /* AppDelegate.swift */; };
+		F47D291223DC9BA5008F4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47D291123DC9BA5008F4ABE /* Assets.xcassets */; };
+		F47D291523DC9BA5008F4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47D291323DC9BA5008F4ABE /* LaunchScreen.storyboard */; };
+		F47D292223DCA0D2008F4ABE /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D292123DCA0D2008F4ABE /* ApplicationAssembly.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3265821D4107FC351A71C692 /* Pods-WetherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetherApp.release.xcconfig"; path = "Target Support Files/Pods-WetherApp/Pods-WetherApp.release.xcconfig"; sourceTree = "<group>"; };
+		32A27F3630DB6F91931B2D2C /* Pods-WetherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetherApp.debug.xcconfig"; path = "Target Support Files/Pods-WetherApp/Pods-WetherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A7F1C208BD11F59F5AF25F94 /* Pods_WetherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WetherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4617B7823DCA38600DB08B7 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		F4617B7A23DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleAssemblyContainer.swift; sourceTree = "<group>"; };
+		F4617B7C23DCA38600DB08B7 /* TabBarModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModulePresenter.swift; sourceTree = "<group>"; };
+		F4617B7E23DCA38600DB08B7 /* TabBarModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleView.swift; sourceTree = "<group>"; };
+		F4617B7F23DCA38600DB08B7 /* TabBarModuleViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleViewInput.swift; sourceTree = "<group>"; };
+		F4617B8023DCA38600DB08B7 /* TabBarModuleViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleViewOutput.swift; sourceTree = "<group>"; };
+		F4617B8223DCA38600DB08B7 /* TabBarModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleInteractorInput.swift; sourceTree = "<group>"; };
+		F4617B8323DCA38600DB08B7 /* TabBarModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		F4617B8423DCA38600DB08B7 /* TabBarModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleInteractor.swift; sourceTree = "<group>"; };
+		F4617B8623DCA38600DB08B7 /* TabBarModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4617B8723DCA38600DB08B7 /* TabBarModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleRouter.swift; sourceTree = "<group>"; };
+		F4617B9723DCA7D600DB08B7 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F4617B9923DCA7D600DB08B7 /* HomeModuleAssemblyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleAssemblyContainer.swift; sourceTree = "<group>"; };
+		F4617B9B23DCA7D600DB08B7 /* HomeModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModulePresenter.swift; sourceTree = "<group>"; };
+		F4617B9D23DCA7D600DB08B7 /* HomeModuleViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleViewInput.swift; sourceTree = "<group>"; };
+		F4617B9E23DCA7D600DB08B7 /* HomeModuleViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleViewOutput.swift; sourceTree = "<group>"; };
+		F4617B9F23DCA7D600DB08B7 /* HomeModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleView.swift; sourceTree = "<group>"; };
+		F4617BA123DCA7D600DB08B7 /* HomeModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInteractorInput.swift; sourceTree = "<group>"; };
+		F4617BA223DCA7D600DB08B7 /* HomeModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInteractor.swift; sourceTree = "<group>"; };
+		F4617BA323DCA7D600DB08B7 /* HomeModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		F4617BA523DCA7D600DB08B7 /* HomeModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleRouter.swift; sourceTree = "<group>"; };
+		F4617BA623DCA7D600DB08B7 /* HomeModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4617BB723DCA96D00DB08B7 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		F4617BB923DCA96D00DB08B7 /* MapModuleAssemblyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleAssemblyContainer.swift; sourceTree = "<group>"; };
+		F4617BBB23DCA96D00DB08B7 /* MapModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModulePresenter.swift; sourceTree = "<group>"; };
+		F4617BBD23DCA96D00DB08B7 /* MapModuleViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleViewOutput.swift; sourceTree = "<group>"; };
+		F4617BBE23DCA96D00DB08B7 /* MapModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleView.swift; sourceTree = "<group>"; };
+		F4617BBF23DCA96D00DB08B7 /* MapModuleViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleViewInput.swift; sourceTree = "<group>"; };
+		F4617BC123DCA96D00DB08B7 /* MapModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleInteractorInput.swift; sourceTree = "<group>"; };
+		F4617BC223DCA96D00DB08B7 /* MapModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleInteractor.swift; sourceTree = "<group>"; };
+		F4617BC323DCA96D00DB08B7 /* MapModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		F4617BC523DCA96D00DB08B7 /* MapModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4617BC623DCA96D00DB08B7 /* MapModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleRouter.swift; sourceTree = "<group>"; };
+		F4617BD723DCAAAB00DB08B7 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		F4617BD923DCAAAB00DB08B7 /* SearchModuleAssemblyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleAssemblyContainer.swift; sourceTree = "<group>"; };
+		F4617BDB23DCAAAB00DB08B7 /* SearchModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModulePresenter.swift; sourceTree = "<group>"; };
+		F4617BDD23DCAAAB00DB08B7 /* SearchModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleView.swift; sourceTree = "<group>"; };
+		F4617BDE23DCAAAB00DB08B7 /* SearchModuleViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleViewOutput.swift; sourceTree = "<group>"; };
+		F4617BDF23DCAAAB00DB08B7 /* SearchModuleViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleViewInput.swift; sourceTree = "<group>"; };
+		F4617BE123DCAAAB00DB08B7 /* SearchModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		F4617BE223DCAAAB00DB08B7 /* SearchModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleInteractor.swift; sourceTree = "<group>"; };
+		F4617BE323DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleInteractorInput.swift; sourceTree = "<group>"; };
+		F4617BE523DCAAAB00DB08B7 /* SearchModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4617BE623DCAAAB00DB08B7 /* SearchModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleRouter.swift; sourceTree = "<group>"; };
+		F47D290523DC9BA1008F4ABE /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47D290823DC9BA1008F4ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F47D291123DC9BA5008F4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47D291423DC9BA5008F4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F47D291623DC9BA5008F4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47D292123DCA0D2008F4ABE /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F47D290223DC9BA1008F4ABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11E3539EC072193167E6D83 /* Pods_WetherApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4925C757A49C5A5A6BBF76E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32A27F3630DB6F91931B2D2C /* Pods-WetherApp.debug.xcconfig */,
+				3265821D4107FC351A71C692 /* Pods-WetherApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C121F98DB4814783E8C71BC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7F1C208BD11F59F5AF25F94 /* Pods_WetherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4617B6F23DCA25A00DB08B7 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B7623DCA38600DB08B7 /* TabBarModule */,
+				F4617B9523DCA7D600DB08B7 /* HomeModule */,
+				F4617BB523DCA96D00DB08B7 /* MapModule */,
+				F4617BD523DCAAAB00DB08B7 /* SearchModule */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		F4617B7623DCA38600DB08B7 /* TabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B7923DCA38600DB08B7 /* Assembly */,
+				F4617B7D23DCA38600DB08B7 /* View */,
+				F4617B7B23DCA38600DB08B7 /* Presenter */,
+				F4617B8123DCA38600DB08B7 /* Interactor */,
+				F4617B8523DCA38600DB08B7 /* Router */,
+				F4617B7723DCA38600DB08B7 /* Storyboard */,
+			);
+			path = TabBarModule;
+			sourceTree = "<group>";
+		};
+		F4617B7723DCA38600DB08B7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B7823DCA38600DB08B7 /* TabBar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4617B7923DCA38600DB08B7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B7A23DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F4617B7B23DCA38600DB08B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B7C23DCA38600DB08B7 /* TabBarModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4617B7D23DCA38600DB08B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B7E23DCA38600DB08B7 /* TabBarModuleView.swift */,
+				F4617B7F23DCA38600DB08B7 /* TabBarModuleViewInput.swift */,
+				F4617B8023DCA38600DB08B7 /* TabBarModuleViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4617B8123DCA38600DB08B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B8223DCA38600DB08B7 /* TabBarModuleInteractorInput.swift */,
+				F4617B8323DCA38600DB08B7 /* TabBarModuleInteractorOutput.swift */,
+				F4617B8423DCA38600DB08B7 /* TabBarModuleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F4617B8523DCA38600DB08B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B8623DCA38600DB08B7 /* TabBarModuleRouterInput.swift */,
+				F4617B8723DCA38600DB08B7 /* TabBarModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F4617B9523DCA7D600DB08B7 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B9823DCA7D600DB08B7 /* Assembly */,
+				F4617B9C23DCA7D600DB08B7 /* View */,
+				F4617B9A23DCA7D600DB08B7 /* Presenter */,
+				F4617BA023DCA7D600DB08B7 /* Interactor */,
+				F4617BA423DCA7D600DB08B7 /* Router */,
+				F4617B9623DCA7D600DB08B7 /* Storyboard */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		F4617B9623DCA7D600DB08B7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B9723DCA7D600DB08B7 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4617B9823DCA7D600DB08B7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B9923DCA7D600DB08B7 /* HomeModuleAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F4617B9A23DCA7D600DB08B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B9B23DCA7D600DB08B7 /* HomeModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4617B9C23DCA7D600DB08B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B9F23DCA7D600DB08B7 /* HomeModuleView.swift */,
+				F4617B9D23DCA7D600DB08B7 /* HomeModuleViewInput.swift */,
+				F4617B9E23DCA7D600DB08B7 /* HomeModuleViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4617BA023DCA7D600DB08B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BA123DCA7D600DB08B7 /* HomeModuleInteractorInput.swift */,
+				F4617BA223DCA7D600DB08B7 /* HomeModuleInteractor.swift */,
+				F4617BA323DCA7D600DB08B7 /* HomeModuleInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F4617BA423DCA7D600DB08B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BA523DCA7D600DB08B7 /* HomeModuleRouter.swift */,
+				F4617BA623DCA7D600DB08B7 /* HomeModuleRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F4617BB523DCA96D00DB08B7 /* MapModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BB823DCA96D00DB08B7 /* Assembly */,
+				F4617BBC23DCA96D00DB08B7 /* View */,
+				F4617BBA23DCA96D00DB08B7 /* Presenter */,
+				F4617BC023DCA96D00DB08B7 /* Interactor */,
+				F4617BC423DCA96D00DB08B7 /* Router */,
+				F4617BB623DCA96D00DB08B7 /* Storyboard */,
+			);
+			path = MapModule;
+			sourceTree = "<group>";
+		};
+		F4617BB623DCA96D00DB08B7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BB723DCA96D00DB08B7 /* Map.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4617BB823DCA96D00DB08B7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BB923DCA96D00DB08B7 /* MapModuleAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F4617BBA23DCA96D00DB08B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BBB23DCA96D00DB08B7 /* MapModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4617BBC23DCA96D00DB08B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BBD23DCA96D00DB08B7 /* MapModuleViewOutput.swift */,
+				F4617BBE23DCA96D00DB08B7 /* MapModuleView.swift */,
+				F4617BBF23DCA96D00DB08B7 /* MapModuleViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4617BC023DCA96D00DB08B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BC123DCA96D00DB08B7 /* MapModuleInteractorInput.swift */,
+				F4617BC223DCA96D00DB08B7 /* MapModuleInteractor.swift */,
+				F4617BC323DCA96D00DB08B7 /* MapModuleInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F4617BC423DCA96D00DB08B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BC523DCA96D00DB08B7 /* MapModuleRouterInput.swift */,
+				F4617BC623DCA96D00DB08B7 /* MapModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F4617BD523DCAAAB00DB08B7 /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BD823DCAAAB00DB08B7 /* Assembly */,
+				F4617BDC23DCAAAB00DB08B7 /* View */,
+				F4617BDA23DCAAAB00DB08B7 /* Presenter */,
+				F4617BE023DCAAAB00DB08B7 /* Interactor */,
+				F4617BE423DCAAAB00DB08B7 /* Router */,
+				F4617BD623DCAAAB00DB08B7 /* Storyboard */,
+			);
+			path = SearchModule;
+			sourceTree = "<group>";
+		};
+		F4617BD623DCAAAB00DB08B7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BD723DCAAAB00DB08B7 /* Search.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4617BD823DCAAAB00DB08B7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BD923DCAAAB00DB08B7 /* SearchModuleAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F4617BDA23DCAAAB00DB08B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BDB23DCAAAB00DB08B7 /* SearchModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4617BDC23DCAAAB00DB08B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BDD23DCAAAB00DB08B7 /* SearchModuleView.swift */,
+				F4617BDE23DCAAAB00DB08B7 /* SearchModuleViewOutput.swift */,
+				F4617BDF23DCAAAB00DB08B7 /* SearchModuleViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4617BE023DCAAAB00DB08B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BE123DCAAAB00DB08B7 /* SearchModuleInteractorOutput.swift */,
+				F4617BE223DCAAAB00DB08B7 /* SearchModuleInteractor.swift */,
+				F4617BE323DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F4617BE423DCAAAB00DB08B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BE523DCAAAB00DB08B7 /* SearchModuleRouterInput.swift */,
+				F4617BE623DCAAAB00DB08B7 /* SearchModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F47D28FC23DC9BA1008F4ABE = {
+			isa = PBXGroup;
+			children = (
+				F47D290723DC9BA1008F4ABE /* WetherApp */,
+				F47D290623DC9BA1008F4ABE /* Products */,
+				4925C757A49C5A5A6BBF76E9 /* Pods */,
+				C121F98DB4814783E8C71BC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F47D290623DC9BA1008F4ABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47D290523DC9BA1008F4ABE /* WetherApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47D290723DC9BA1008F4ABE /* WetherApp */ = {
+			isa = PBXGroup;
+			children = (
+				F47D290823DC9BA1008F4ABE /* AppDelegate.swift */,
+				F47D292023DCA0D2008F4ABE /* ApplicationAssembly */,
+				F4617B6F23DCA25A00DB08B7 /* ApplicationLayer */,
+				F47D291C23DCA013008F4ABE /* General */,
+				F47D291D23DCA067008F4ABE /* Xcassets */,
+				F47D291623DC9BA5008F4ABE /* Info.plist */,
+			);
+			path = WetherApp;
+			sourceTree = "<group>";
+		};
+		F47D291C23DCA013008F4ABE /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F47D291323DC9BA5008F4ABE /* LaunchScreen.storyboard */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F47D291D23DCA067008F4ABE /* Xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				F47D291123DC9BA5008F4ABE /* Assets.xcassets */,
+			);
+			path = Xcassets;
+			sourceTree = "<group>";
+		};
+		F47D292023DCA0D2008F4ABE /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				F47D292123DCA0D2008F4ABE /* ApplicationAssembly.swift */,
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F47D290423DC9BA1008F4ABE /* WetherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47D291923DC9BA5008F4ABE /* Build configuration list for PBXNativeTarget "WetherApp" */;
+			buildPhases = (
+				C0B818108C3451D98C25411F /* [CP] Check Pods Manifest.lock */,
+				F47D290123DC9BA1008F4ABE /* Sources */,
+				F47D290223DC9BA1008F4ABE /* Frameworks */,
+				F47D290323DC9BA1008F4ABE /* Resources */,
+				42389857FF7FCDCD235A53A1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WetherApp;
+			productName = WetherApp;
+			productReference = F47D290523DC9BA1008F4ABE /* WetherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F47D28FD23DC9BA1008F4ABE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Home;
+				TargetAttributes = {
+					F47D290423DC9BA1008F4ABE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F47D290023DC9BA1008F4ABE /* Build configuration list for PBXProject "WetherApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F47D28FC23DC9BA1008F4ABE;
+			productRefGroup = F47D290623DC9BA1008F4ABE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47D290423DC9BA1008F4ABE /* WetherApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F47D290323DC9BA1008F4ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47D291523DC9BA5008F4ABE /* LaunchScreen.storyboard in Resources */,
+				F4617B8823DCA38600DB08B7 /* TabBar.storyboard in Resources */,
+				F4617BC723DCA96D00DB08B7 /* Map.storyboard in Resources */,
+				F47D291223DC9BA5008F4ABE /* Assets.xcassets in Resources */,
+				F4617BE723DCAAAB00DB08B7 /* Search.storyboard in Resources */,
+				F4617BA723DCA7D600DB08B7 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42389857FF7FCDCD235A53A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WetherApp/Pods-WetherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WetherApp/Pods-WetherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WetherApp/Pods-WetherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0B818108C3451D98C25411F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WetherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F47D290123DC9BA1008F4ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4617BAB23DCA7D600DB08B7 /* HomeModuleViewOutput.swift in Sources */,
+				F4617BA823DCA7D600DB08B7 /* HomeModuleAssemblyContainer.swift in Sources */,
+				F4617BEC23DCAAAB00DB08B7 /* SearchModuleViewInput.swift in Sources */,
+				F4617BAA23DCA7D600DB08B7 /* HomeModuleViewInput.swift in Sources */,
+				F4617BF023DCAAAB00DB08B7 /* SearchModuleRouterInput.swift in Sources */,
+				F4617B9123DCA38600DB08B7 /* TabBarModuleRouterInput.swift in Sources */,
+				F4617BB023DCA7D600DB08B7 /* HomeModuleRouter.swift in Sources */,
+				F4617BAD23DCA7D600DB08B7 /* HomeModuleInteractorInput.swift in Sources */,
+				F4617B8B23DCA38600DB08B7 /* TabBarModuleView.swift in Sources */,
+				F4617BCC23DCA96D00DB08B7 /* MapModuleViewInput.swift in Sources */,
+				F4617BCD23DCA96D00DB08B7 /* MapModuleInteractorInput.swift in Sources */,
+				F4617BC823DCA96D00DB08B7 /* MapModuleAssemblyContainer.swift in Sources */,
+				F4617BE923DCAAAB00DB08B7 /* SearchModulePresenter.swift in Sources */,
+				F4617BCF23DCA96D00DB08B7 /* MapModuleInteractorOutput.swift in Sources */,
+				F4617B8A23DCA38600DB08B7 /* TabBarModulePresenter.swift in Sources */,
+				F4617B8923DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift in Sources */,
+				F4617BED23DCAAAB00DB08B7 /* SearchModuleInteractorOutput.swift in Sources */,
+				F4617BAC23DCA7D600DB08B7 /* HomeModuleView.swift in Sources */,
+				F4617BEB23DCAAAB00DB08B7 /* SearchModuleViewOutput.swift in Sources */,
+				F4617B8E23DCA38600DB08B7 /* TabBarModuleInteractorInput.swift in Sources */,
+				F4617BAE23DCA7D600DB08B7 /* HomeModuleInteractor.swift in Sources */,
+				F4617BB123DCA7D600DB08B7 /* HomeModuleRouterInput.swift in Sources */,
+				F4617BEA23DCAAAB00DB08B7 /* SearchModuleView.swift in Sources */,
+				F4617B8C23DCA38600DB08B7 /* TabBarModuleViewInput.swift in Sources */,
+				F4617BCB23DCA96D00DB08B7 /* MapModuleView.swift in Sources */,
+				F4617B8D23DCA38600DB08B7 /* TabBarModuleViewOutput.swift in Sources */,
+				F4617BEF23DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift in Sources */,
+				F4617B8F23DCA38600DB08B7 /* TabBarModuleInteractorOutput.swift in Sources */,
+				F4617BD123DCA96D00DB08B7 /* MapModuleRouter.swift in Sources */,
+				F4617BEE23DCAAAB00DB08B7 /* SearchModuleInteractor.swift in Sources */,
+				F4617BD023DCA96D00DB08B7 /* MapModuleRouterInput.swift in Sources */,
+				F4617BCE23DCA96D00DB08B7 /* MapModuleInteractor.swift in Sources */,
+				F47D292223DCA0D2008F4ABE /* ApplicationAssembly.swift in Sources */,
+				F4617B9023DCA38600DB08B7 /* TabBarModuleInteractor.swift in Sources */,
+				F4617BAF23DCA7D600DB08B7 /* HomeModuleInteractorOutput.swift in Sources */,
+				F4617BCA23DCA96D00DB08B7 /* MapModuleViewOutput.swift in Sources */,
+				F4617BF123DCAAAB00DB08B7 /* SearchModuleRouter.swift in Sources */,
+				F4617B9223DCA38600DB08B7 /* TabBarModuleRouter.swift in Sources */,
+				F47D290923DC9BA1008F4ABE /* AppDelegate.swift in Sources */,
+				F4617BA923DCA7D600DB08B7 /* HomeModulePresenter.swift in Sources */,
+				F4617BC923DCA96D00DB08B7 /* MapModulePresenter.swift in Sources */,
+				F4617BE823DCAAAB00DB08B7 /* SearchModuleAssemblyContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F47D291323DC9BA5008F4ABE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47D291423DC9BA5008F4ABE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F47D291723DC9BA5008F4ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F47D291823DC9BA5008F4ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F47D291A23DC9BA5008F4ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A27F3630DB6F91931B2D2C /* Pods-WetherApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = WetherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HomeTeam.WetherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F47D291B23DC9BA5008F4ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3265821D4107FC351A71C692 /* Pods-WetherApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = WetherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HomeTeam.WetherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F47D290023DC9BA1008F4ABE /* Build configuration list for PBXProject "WetherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47D291723DC9BA5008F4ABE /* Debug */,
+				F47D291823DC9BA5008F4ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47D291923DC9BA5008F4ABE /* Build configuration list for PBXNativeTarget "WetherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47D291A23DC9BA5008F4ABE /* Debug */,
+				F47D291B23DC9BA5008F4ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F47D28FD23DC9BA1008F4ABE /* Project object */;
+}

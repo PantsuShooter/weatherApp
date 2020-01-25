@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xfT-rk-fsJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Module View-->
+        <scene sceneID="LdE-Nq-woY">
+            <objects>
+                <tabBarController id="xql-xH-PvB" customClass="TabBarModuleView" customModule="WetherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tqw-nc-Yfj"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FFG-x6-T1n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="M0h-QX-cbW" kind="relationship" relationship="viewControllers" id="XWw-A6-P69"/>
+                        <segue destination="dWV-7p-zk3" kind="relationship" relationship="viewControllers" id="t8i-qN-5fp"/>
+                        <segue destination="4xc-bM-YDX" kind="relationship" relationship="viewControllers" id="7Wl-9A-wRo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ell-zl-3HB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U2K-Jr-YuH">
+            <objects>
+                <navigationController storyboardIdentifier="TabBarNavigationController" id="xfT-rk-fsJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rwx-4i-qSq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xql-xH-PvB" kind="relationship" relationship="rootViewController" id="3s4-Lk-GsQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lWc-Qr-UVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="100"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SKS-VM-bZ9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="M0h-QX-cbW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="aiC-HB-O5H"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7do-Zk-mSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="-192"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="jXR-IG-J9M">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="dWV-7p-zk3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="ndj-Ub-FhP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KfI-uy-f2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="100"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="HYa-ev-iH3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="4xc-bM-YDX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="sZ3-U7-1yy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdR-eC-4QF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="map" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
