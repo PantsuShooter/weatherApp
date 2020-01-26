@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +19,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aE9-u6-aKf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SN4-rN-jWx">
                                 <rect key="frame" x="0.0" y="300" width="414" height="100"/>
@@ -53,6 +54,7 @@
                             <constraint firstItem="SN4-rN-jWx" firstAttribute="top" secondItem="aE9-u6-aKf" secondAttribute="bottom" id="new-hF-XrZ"/>
                             <constraint firstAttribute="trailing" secondItem="SN4-rN-jWx" secondAttribute="trailing" id="oxC-Z0-SdD"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ane-tM-f8J"/>
                     </view>
                     <navigationItem key="navigationItem" id="jji-uH-Yqx"/>
                     <size key="freeformSize" width="414" height="400"/>

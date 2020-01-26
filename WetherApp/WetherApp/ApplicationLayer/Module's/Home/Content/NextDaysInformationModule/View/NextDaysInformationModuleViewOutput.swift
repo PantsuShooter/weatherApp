@@ -6,4 +6,8 @@
 //  Copyright © 2020 Home. All rights reserved.
 //
 
-protocol NextDaysInformationModuleViewOutput: class {}
+import MapKit
+
+protocol NextDaysInformationModuleViewOutput: class {
+    func setUpdated(coordinates: CLLocationCoordinate2D)
+}

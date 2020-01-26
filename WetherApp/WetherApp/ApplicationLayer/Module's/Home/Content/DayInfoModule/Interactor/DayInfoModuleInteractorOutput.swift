@@ -6,4 +6,9 @@
 //  Copyright © 2020 Home. All rights reserved.
 //
 
-protocol DayInfoModuleInteractorOutput: class {}
+protocol DayInfoModuleInteractorOutput: class {
+    
+    func weatherUpdateWith(indications: WeatherIndicationsModel)
+    func weatherUpdateWith(error: Error)
+    
+}

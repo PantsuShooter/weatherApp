@@ -6,4 +6,6 @@
 //  Copyright © 2020 Home. All rights reserved.
 //
 
-protocol DayInfoModuleViewInput: class {}
+protocol DayInfoModuleViewInput: class {
+    func weatherWasUpdated()
+}

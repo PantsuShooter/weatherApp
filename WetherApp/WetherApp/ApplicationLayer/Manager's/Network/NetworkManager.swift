@@ -31,7 +31,7 @@ class NetworkManager {
     
     static let shared = NetworkManager()
     
-    public func getWeatherBy(latitude: Double, longitude: Double ,completionBlock: @escaping ( _ user: WeatherIndicationsModel?,  _ error: Error?) -> ()) {
+    public func getWeatherBy(latitude: Double, longitude: Double ,completionBlock: @escaping ( _ weather: WeatherIndicationsModel?,  _ error: Error?) -> ()) {
         
         let parameters = ["lat" : latitude,
                           "lon" : longitude,
@@ -42,7 +42,9 @@ class NetworkManager {
         Alamofire.request(APPURL.weather, method: .get, parameters: parameters, headers: headers).responseJSON { response in
             switch response.result {
             case .success:
-                if let data = response.data, let weather = try? JSONDecoder().decode(WeatherIndicationsModel.self, from: data) {
+                
+                if let data = response.data {
+                    let weather = try? JSONDecoder().decode(WeatherIndicationsModel.self, from: data)
                     completionBlock(weather,nil)
                 } else {
                     let error = NSError.init(domain: response.result.debugDescription, code: 404, userInfo: nil)

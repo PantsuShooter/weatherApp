@@ -6,4 +6,8 @@
 //  Copyright © 2020 Home. All rights reserved.
 //
 
-protocol DayInfoModuleInteractorInput: class {}
+protocol DayInfoModuleInteractorInput: class {
+    
+    func requestWeatherBy(latitude :Double, andLongitude: Double)
+    
+}

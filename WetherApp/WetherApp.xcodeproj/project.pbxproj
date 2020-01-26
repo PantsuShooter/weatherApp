@@ -79,6 +79,8 @@
 		F499CF4123DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3523DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift */; };
 		F499CF4223DCBFA00068E73F /* NextDaysInformationModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3723DCBFA00068E73F /* NextDaysInformationModuleRouter.swift */; };
 		F499CF4323DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */; };
+		F4CC74F123DDE6DB00C71835 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC74F023DDE6DB00C71835 /* CityCollectionViewCell.swift */; };
+		F4CC74F323DDE6F700C71835 /* AddNewCityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC74F223DDE6F700C71835 /* AddNewCityCollectionViewCell.swift */; };
 		F4D7F28E23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */; };
 		F4D7F29123DCF40900B02FDF /* WeatherIndicationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29023DCF40900B02FDF /* WeatherIndicationsModel.swift */; };
 		F4D7F29423DCF7F100B02FDF /* WeatherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29323DCF7F100B02FDF /* WeatherInfoModel.swift */; };
@@ -165,6 +167,8 @@
 		F499CF3523DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleInteractorOutput.swift; sourceTree = "<group>"; };
 		F499CF3723DCBFA00068E73F /* NextDaysInformationModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleRouter.swift; sourceTree = "<group>"; };
 		F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4CC74F023DDE6DB00C71835 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4CC74F223DDE6F700C71835 /* AddNewCityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCityCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
 		F4D7F29023DCF40900B02FDF /* WeatherIndicationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIndicationsModel.swift; sourceTree = "<group>"; };
 		F4D7F29323DCF7F100B02FDF /* WeatherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoModel.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 				F499CF2323DCBE560068E73F /* Manager's */,
 				F4D7F28C23DCEFB100B02FDF /* Extension's */,
 				F4D7F28F23DCF3D200B02FDF /* Model's */,
+				F4CC74EC23DDD83E00C71835 /* Xib's */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				F4617BA023DCA7D600DB08B7 /* Interactor */,
 				F4617BA423DCA7D600DB08B7 /* Router */,
 				F4617B9623DCA7D600DB08B7 /* Storyboard */,
+				F4CC74EF23DDE6AB00C71835 /* Suport */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -537,9 +543,9 @@
 		F4617C0023DCB0B300DB08B7 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				F4617C0123DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift */,
 				F4617C0223DCB0B300DB08B7 /* DayInfoModuleInteractor.swift */,
 				F4617C0323DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift */,
+				F4617C0123DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -708,6 +714,22 @@
 				F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		F4CC74EC23DDD83E00C71835 /* Xib's */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Xib's";
+			sourceTree = "<group>";
+		};
+		F4CC74EF23DDE6AB00C71835 /* Suport */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC74F023DDE6DB00C71835 /* CityCollectionViewCell.swift */,
+				F4CC74F223DDE6F700C71835 /* AddNewCityCollectionViewCell.swift */,
+			);
+			path = Suport;
 			sourceTree = "<group>";
 		};
 		F4D7F28C23DCEFB100B02FDF /* Extension's */ = {
@@ -921,7 +943,9 @@
 				F4617BF123DCAAAB00DB08B7 /* SearchModuleRouter.swift in Sources */,
 				F4617B9223DCA38600DB08B7 /* TabBarModuleRouter.swift in Sources */,
 				F4D7F29423DCF7F100B02FDF /* WeatherInfoModel.swift in Sources */,
+				F4CC74F123DDE6DB00C71835 /* CityCollectionViewCell.swift in Sources */,
 				F4D7F29823DCFB9000B02FDF /* WindWeatherModel.swift in Sources */,
+				F4CC74F323DDE6F700C71835 /* AddNewCityCollectionViewCell.swift in Sources */,
 				F4617C0D23DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift in Sources */,
 				F47D290923DC9BA1008F4ABE /* AppDelegate.swift in Sources */,
 				F4617BA923DCA7D600DB08B7 /* HomeModulePresenter.swift in Sources */,

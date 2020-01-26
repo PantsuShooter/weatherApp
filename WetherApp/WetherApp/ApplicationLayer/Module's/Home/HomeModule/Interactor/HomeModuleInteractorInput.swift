@@ -10,6 +10,4 @@ protocol HomeModuleInteractorInput: class {
     
     func startRequestLocationCoordinates()
 
-    func requestWeatherBy(latitude :Double, andLongitude: Double)
-    
 }

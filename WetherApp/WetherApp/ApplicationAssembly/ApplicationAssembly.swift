@@ -1,9 +1,9 @@
 //
 //  ApplicationAssembly.swift
-//  FreeStuffFinder
+//  WetherApp
 //
-//  Created by MacBook on 24.09.2018.
-//  Copyright © 2018 MacBook. All rights reserved.
+//  Created by Home on 25.01.2020.
+//  Copyright © 2020 Home. All rights reserved.
 //
 
 import Swinject

@@ -6,4 +6,8 @@
 //  Copyright © 2020 Home. All rights reserved.
 //
 
-protocol DayInfoModuleViewOutput: class {}
+import MapKit
+
+protocol DayInfoModuleViewOutput: class {
+    func setUpdated(coordinates: CLLocationCoordinate2D)
+}

@@ -10,4 +10,14 @@ final class DayInfoModuleInteractor: DayInfoModuleInteractorInput {
     
     public var output: DayInfoModuleInteractorOutput!
     
+    func requestWeatherBy(latitude: Double, andLongitude: Double) {
+        NetworkManager.shared.getWeatherBy(latitude: latitude, longitude: andLongitude) { [weak self] weather, error in
+            if let weather = weather {
+                self?.output.weatherUpdateWith(indications: weather)
+            }
+            if let error = error {
+                self?.output.weatherUpdateWith(error: error)
+            }
+        }
+    }
 }

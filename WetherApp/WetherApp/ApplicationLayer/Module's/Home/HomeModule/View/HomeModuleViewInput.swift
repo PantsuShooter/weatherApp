@@ -6,6 +6,10 @@
 //  Copyright © 2020 Home. All rights reserved.
 //
 
+import MapKit
+
 protocol HomeModuleViewInput: class {
-    func weatherWatsUpdatetWith(indications: WeatherIndicationsModel)
+    
+    func receivedNew(coordinates: CLLocationCoordinate2D)
+        
 }

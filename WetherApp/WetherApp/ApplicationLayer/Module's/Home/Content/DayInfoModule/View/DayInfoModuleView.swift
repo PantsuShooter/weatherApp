@@ -21,4 +21,16 @@ class DayInfoModuleView: UIViewController {
     }
 }
 
-extension DayInfoModuleView: DayInfoModuleViewInput {}
+extension DayInfoModuleView {
+    
+    private func setupUI() {
+        
+    }
+    
+}
+
+extension DayInfoModuleView: DayInfoModuleViewInput {
+    func weatherWasUpdated() {
+        
+    }
+}

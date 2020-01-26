@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 
 final class DayInfoModulePresenter: DayInfoModuleViewOutput {
     
@@ -14,6 +15,24 @@ final class DayInfoModulePresenter: DayInfoModuleViewOutput {
     var interactor: DayInfoModuleInteractorInput!
     var router:     DayInfoModuleRouterInput!
     
+    var currentWeather: WeatherIndicationsModel?
+    var currentCoordinate: CLLocationCoordinate2D?
+    
+    
+    func setUpdated(coordinates: CLLocationCoordinate2D) {
+        self.currentCoordinate = coordinates
+        interactor.requestWeatherBy(latitude: coordinates.latitude, andLongitude: coordinates.longitude)
+    }
 }
 
-extension DayInfoModulePresenter: DayInfoModuleInteractorOutput {}
+extension DayInfoModulePresenter: DayInfoModuleInteractorOutput {
+    
+    func weatherUpdateWith(indications: WeatherIndicationsModel) {
+        self.currentWeather = indications
+        view.weatherWasUpdated()
+    }
+    
+    func weatherUpdateWith(error: Error) {
+        debugPrint(error)
+    }
+}

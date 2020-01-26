@@ -15,10 +15,7 @@ final class HomeModulePresenter: HomeModuleViewOutput {
     var interactor: HomeModuleInteractorInput!
     var router:     HomeModuleRouterInput!
     
-    var tempCurrentCoordinate: CLLocationCoordinate2D?
     var currentCoordinate: CLLocationCoordinate2D?
-    
-    var currentWeather: WeatherIndicationsModel?
     
     func startGettingCoordinates() {
         interactor.startRequestLocationCoordinates()
@@ -31,8 +28,8 @@ extension HomeModulePresenter: HomeModuleInteractorOutput {
         
         guard let currentCoordinate = self.currentCoordinate else {
             debugPrint("Cordinate were obtained")
-            interactor.requestWeatherBy(latitude: coordinate.latitude, andLongitude: coordinate.longitude)
-            self.tempCurrentCoordinate = coordinate
+            view.receivedNew(coordinates: coordinate)
+            self.currentCoordinate = coordinate
             return
         }
         
@@ -41,22 +38,11 @@ extension HomeModulePresenter: HomeModuleInteractorOutput {
             return
         }
     
-        interactor.requestWeatherBy(latitude: coordinate.latitude, andLongitude: coordinate.longitude)
-        self.tempCurrentCoordinate = coordinate
+        view.receivedNew(coordinates: coordinate)
+        self.currentCoordinate = coordinate
     }
     
     func coordinatesUpdateWith(error: Error) {
-        debugPrint(error)
-    }
-    
-    
-    func weatherUpdateWith(indications: WeatherIndicationsModel) {
-        self.currentWeather = indications
-        self.currentCoordinate = tempCurrentCoordinate
-        view.weatherWatsUpdatetWith(indications: indications)
-    }
-    
-    func weatherUpdateWith(error: Error) {
         debugPrint(error)
     }
 }

@@ -13,7 +13,4 @@ protocol HomeModuleInteractorOutput: class {
     func coordinatesUpdateWith(error: Error)
     func coordinatesUpdateWith(coordinate: CLLocationCoordinate2D)
     
-    func weatherUpdateWith(indications: WeatherIndicationsModel)
-    func weatherUpdateWith(error: Error)
-    
 }

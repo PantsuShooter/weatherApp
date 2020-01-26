@@ -7,7 +7,5 @@
 //
 
 protocol HomeModuleViewOutput: class {
-    
     func startGettingCoordinates()
-    
 }
