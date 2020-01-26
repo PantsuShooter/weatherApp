@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeModuleView" id="BYZ-38-t0r" customClass="HomeModuleView" customModule="WetherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkO-cg-Uc2" userLabel="Day Info Container">
+                                <rect key="frame" x="0.0" y="44" width="414" height="500"/>
+                                <connections>
+                                    <segue destination="v6x-vS-dUI" kind="embed" id="M1P-9n-qq7"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgv-kA-3bm">
+                                <rect key="frame" x="0.0" y="544" width="414" height="269"/>
+                                <connections>
+                                    <segue destination="xgO-hm-5sa" kind="embed" id="54Q-1b-QUy"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9JP-z6-zH3" firstAttribute="trailing" secondItem="dkO-cg-Uc2" secondAttribute="trailing" id="6ib-EA-PdE"/>
+                            <constraint firstItem="dkO-cg-Uc2" firstAttribute="leading" secondItem="9JP-z6-zH3" secondAttribute="leading" id="JkO-nX-Pr0"/>
+                            <constraint firstItem="dgv-kA-3bm" firstAttribute="leading" secondItem="9JP-z6-zH3" secondAttribute="leading" id="Ki8-Kh-Xqf"/>
+                            <constraint firstItem="dkO-cg-Uc2" firstAttribute="height" secondItem="9JP-z6-zH3" secondAttribute="height" multiplier="0.650195" id="bzv-DI-rb2"/>
+                            <constraint firstItem="9JP-z6-zH3" firstAttribute="bottom" secondItem="dgv-kA-3bm" secondAttribute="bottom" id="dXG-vu-PRM"/>
+                            <constraint firstItem="dkO-cg-Uc2" firstAttribute="top" secondItem="9JP-z6-zH3" secondAttribute="top" id="g7u-jt-zYw"/>
+                            <constraint firstItem="dgv-kA-3bm" firstAttribute="top" secondItem="dkO-cg-Uc2" secondAttribute="bottom" id="oCB-xN-iDc"/>
+                            <constraint firstItem="9JP-z6-zH3" firstAttribute="trailing" secondItem="dgv-kA-3bm" secondAttribute="trailing" id="pBe-44-Xq0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9JP-z6-zH3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="LfS-w4-2Ii"/>
+                    <navigationItem key="navigationItem" id="jji-uH-Yqx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.00000000000011" y="99.776785714285708"/>
+        </scene>
+        <!--NextDaysInformation-->
+        <scene sceneID="LI5-6i-Fkr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NextDaysInformation" id="xgO-hm-5sa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja0-Gn-Snm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="258"/>
+        </scene>
+        <!--DayInfo-->
+        <scene sceneID="Y6l-BT-tfY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DayInfo" id="v6x-vS-dUI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdD-O2-mj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333" y="-7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="64" height="54"/>
+    </resources>
+</document>

@@ -10,5 +10,11 @@ target 'WetherApp' do
       pod 'Swinject', '~>2.6.2'
       pod 'SwinjectStoryboard', '~>2.2.0'
   
+  # NETWORK
+      pod 'Alamofire'
+      
+  # LOCATION
+      pod 'SwiftLocation'
+
 
 end

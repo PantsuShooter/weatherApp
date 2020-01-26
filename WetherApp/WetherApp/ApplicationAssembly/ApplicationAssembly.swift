@@ -13,7 +13,14 @@ final class ApplicationAssembly {
     
     // Use default dependency
     class var assembler: Assembler {
-        return Assembler([])
+        return Assembler([
+            TabBarAssemblyContainer(),
+            HomeAssemblyContainer(),
+            DayInfoAssemblyContainer(),
+            NextDaysInformationAssemblyContainer(),
+            MapAssemblyContainer(),
+            SearchAssemblyContainer()
+        ])
     }
     
     var assembler: Assembler

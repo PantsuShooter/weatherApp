@@ -6,4 +6,6 @@
 //  Copyright © 2020 Home. All rights reserved.
 //
 
-protocol HomeModuleViewInput: class {}
+protocol HomeModuleViewInput: class {
+    func weatherWatsUpdatetWith(indications: WeatherIndicationsModel)
+}

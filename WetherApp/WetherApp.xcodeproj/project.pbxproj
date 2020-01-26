@@ -52,10 +52,40 @@
 		F4617BEF23DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE323DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift */; };
 		F4617BF023DCAAAB00DB08B7 /* SearchModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE523DCAAAB00DB08B7 /* SearchModuleRouterInput.swift */; };
 		F4617BF123DCAAAB00DB08B7 /* SearchModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BE623DCAAAB00DB08B7 /* SearchModuleRouter.swift */; };
+		F4617C0723DCB0B300DB08B7 /* DayInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4617BF723DCB0B300DB08B7 /* DayInfo.storyboard */; };
+		F4617C0823DCB0B300DB08B7 /* DayInfoModuleAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BF923DCB0B300DB08B7 /* DayInfoModuleAssemblyContainer.swift */; };
+		F4617C0923DCB0B300DB08B7 /* DayInfoModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BFB23DCB0B300DB08B7 /* DayInfoModulePresenter.swift */; };
+		F4617C0A23DCB0B300DB08B7 /* DayInfoModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BFD23DCB0B300DB08B7 /* DayInfoModuleView.swift */; };
+		F4617C0B23DCB0B300DB08B7 /* DayInfoModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BFE23DCB0B300DB08B7 /* DayInfoModuleViewInput.swift */; };
+		F4617C0C23DCB0B300DB08B7 /* DayInfoModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617BFF23DCB0B300DB08B7 /* DayInfoModuleViewOutput.swift */; };
+		F4617C0D23DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0123DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift */; };
+		F4617C0E23DCB0B300DB08B7 /* DayInfoModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0223DCB0B300DB08B7 /* DayInfoModuleInteractor.swift */; };
+		F4617C0F23DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0323DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift */; };
+		F4617C1023DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0523DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift */; };
+		F4617C1123DCB0B300DB08B7 /* DayInfoModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0623DCB0B300DB08B7 /* DayInfoModuleRouter.swift */; };
 		F47D290923DC9BA1008F4ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D290823DC9BA1008F4ABE /* AppDelegate.swift */; };
 		F47D291223DC9BA5008F4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47D291123DC9BA5008F4ABE /* Assets.xcassets */; };
 		F47D291523DC9BA5008F4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47D291323DC9BA5008F4ABE /* LaunchScreen.storyboard */; };
 		F47D292223DCA0D2008F4ABE /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D292123DCA0D2008F4ABE /* ApplicationAssembly.swift */; };
+		F499CF2623DCBEDF0068E73F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF2523DCBEDF0068E73F /* NetworkManager.swift */; };
+		F499CF3923DCBFA00068E73F /* NextDaysInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F499CF2923DCBFA00068E73F /* NextDaysInformation.storyboard */; };
+		F499CF3A23DCBFA00068E73F /* NextDaysInformationModuleAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF2B23DCBFA00068E73F /* NextDaysInformationModuleAssemblyContainer.swift */; };
+		F499CF3B23DCBFA00068E73F /* NextDaysInformationModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF2D23DCBFA00068E73F /* NextDaysInformationModulePresenter.swift */; };
+		F499CF3C23DCBFA00068E73F /* NextDaysInformationModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF2F23DCBFA00068E73F /* NextDaysInformationModuleViewInput.swift */; };
+		F499CF3D23DCBFA00068E73F /* NextDaysInformationModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3023DCBFA00068E73F /* NextDaysInformationModuleView.swift */; };
+		F499CF3E23DCBFA00068E73F /* NextDaysInformationModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3123DCBFA00068E73F /* NextDaysInformationModuleViewOutput.swift */; };
+		F499CF3F23DCBFA00068E73F /* NextDaysInformationModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3323DCBFA00068E73F /* NextDaysInformationModuleInteractorInput.swift */; };
+		F499CF4023DCBFA00068E73F /* NextDaysInformationModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3423DCBFA00068E73F /* NextDaysInformationModuleInteractor.swift */; };
+		F499CF4123DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3523DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift */; };
+		F499CF4223DCBFA00068E73F /* NextDaysInformationModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3723DCBFA00068E73F /* NextDaysInformationModuleRouter.swift */; };
+		F499CF4323DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */; };
+		F4D7F28E23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */; };
+		F4D7F29123DCF40900B02FDF /* WeatherIndicationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29023DCF40900B02FDF /* WeatherIndicationsModel.swift */; };
+		F4D7F29423DCF7F100B02FDF /* WeatherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29323DCF7F100B02FDF /* WeatherInfoModel.swift */; };
+		F4D7F29623DCF9FE00B02FDF /* MainWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29523DCF9FE00B02FDF /* MainWeatherModel.swift */; };
+		F4D7F29823DCFB9000B02FDF /* WindWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29723DCFB9000B02FDF /* WindWeatherModel.swift */; };
+		F4D7F29A23DCFC0B00B02FDF /* CloudsWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29923DCFC0B00B02FDF /* CloudsWeatherModel.swift */; };
+		F4D7F29C23DCFCA700B02FDF /* SystemWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F29B23DCFCA700B02FDF /* SystemWeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,12 +136,42 @@
 		F4617BE323DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleInteractorInput.swift; sourceTree = "<group>"; };
 		F4617BE523DCAAAB00DB08B7 /* SearchModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleRouterInput.swift; sourceTree = "<group>"; };
 		F4617BE623DCAAAB00DB08B7 /* SearchModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModuleRouter.swift; sourceTree = "<group>"; };
+		F4617BF723DCB0B300DB08B7 /* DayInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DayInfo.storyboard; sourceTree = "<group>"; };
+		F4617BF923DCB0B300DB08B7 /* DayInfoModuleAssemblyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleAssemblyContainer.swift; sourceTree = "<group>"; };
+		F4617BFB23DCB0B300DB08B7 /* DayInfoModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModulePresenter.swift; sourceTree = "<group>"; };
+		F4617BFD23DCB0B300DB08B7 /* DayInfoModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleView.swift; sourceTree = "<group>"; };
+		F4617BFE23DCB0B300DB08B7 /* DayInfoModuleViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleViewInput.swift; sourceTree = "<group>"; };
+		F4617BFF23DCB0B300DB08B7 /* DayInfoModuleViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleViewOutput.swift; sourceTree = "<group>"; };
+		F4617C0123DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		F4617C0223DCB0B300DB08B7 /* DayInfoModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleInteractor.swift; sourceTree = "<group>"; };
+		F4617C0323DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleInteractorInput.swift; sourceTree = "<group>"; };
+		F4617C0523DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4617C0623DCB0B300DB08B7 /* DayInfoModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleRouter.swift; sourceTree = "<group>"; };
 		F47D290523DC9BA1008F4ABE /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47D290823DC9BA1008F4ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47D291123DC9BA5008F4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47D291423DC9BA5008F4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47D291623DC9BA5008F4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47D292123DCA0D2008F4ABE /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		F499CF2523DCBEDF0068E73F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F499CF2923DCBFA00068E73F /* NextDaysInformation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NextDaysInformation.storyboard; sourceTree = "<group>"; };
+		F499CF2B23DCBFA00068E73F /* NextDaysInformationModuleAssemblyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleAssemblyContainer.swift; sourceTree = "<group>"; };
+		F499CF2D23DCBFA00068E73F /* NextDaysInformationModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModulePresenter.swift; sourceTree = "<group>"; };
+		F499CF2F23DCBFA00068E73F /* NextDaysInformationModuleViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleViewInput.swift; sourceTree = "<group>"; };
+		F499CF3023DCBFA00068E73F /* NextDaysInformationModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleView.swift; sourceTree = "<group>"; };
+		F499CF3123DCBFA00068E73F /* NextDaysInformationModuleViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleViewOutput.swift; sourceTree = "<group>"; };
+		F499CF3323DCBFA00068E73F /* NextDaysInformationModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleInteractorInput.swift; sourceTree = "<group>"; };
+		F499CF3423DCBFA00068E73F /* NextDaysInformationModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleInteractor.swift; sourceTree = "<group>"; };
+		F499CF3523DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		F499CF3723DCBFA00068E73F /* NextDaysInformationModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleRouter.swift; sourceTree = "<group>"; };
+		F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		F4D7F29023DCF40900B02FDF /* WeatherIndicationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIndicationsModel.swift; sourceTree = "<group>"; };
+		F4D7F29323DCF7F100B02FDF /* WeatherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoModel.swift; sourceTree = "<group>"; };
+		F4D7F29523DCF9FE00B02FDF /* MainWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherModel.swift; sourceTree = "<group>"; };
+		F4D7F29723DCFB9000B02FDF /* WindWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindWeatherModel.swift; sourceTree = "<group>"; };
+		F4D7F29923DCFC0B00B02FDF /* CloudsWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsWeatherModel.swift; sourceTree = "<group>"; };
+		F4D7F29B23DCFCA700B02FDF /* SystemWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemWeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +206,10 @@
 		F4617B6F23DCA25A00DB08B7 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				F4617B7623DCA38600DB08B7 /* TabBarModule */,
-				F4617B9523DCA7D600DB08B7 /* HomeModule */,
-				F4617BB523DCA96D00DB08B7 /* MapModule */,
-				F4617BD523DCAAAB00DB08B7 /* SearchModule */,
+				F499CF2223DCBE390068E73F /* Module's */,
+				F499CF2323DCBE560068E73F /* Manager's */,
+				F4D7F28C23DCEFB100B02FDF /* Extension's */,
+				F4D7F28F23DCF3D200B02FDF /* Model's */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -270,8 +330,8 @@
 		F4617BA023DCA7D600DB08B7 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				F4617BA123DCA7D600DB08B7 /* HomeModuleInteractorInput.swift */,
 				F4617BA223DCA7D600DB08B7 /* HomeModuleInteractor.swift */,
+				F4617BA123DCA7D600DB08B7 /* HomeModuleInteractorInput.swift */,
 				F4617BA323DCA7D600DB08B7 /* HomeModuleInteractorOutput.swift */,
 			);
 			path = Interactor;
@@ -418,6 +478,90 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		F4617BF223DCB02F00DB08B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B9523DCA7D600DB08B7 /* HomeModule */,
+				F4617C1223DCB0F300DB08B7 /* Content */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F4617BF523DCB0B300DB08B7 /* DayInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BF823DCB0B300DB08B7 /* Assembly */,
+				F4617BFC23DCB0B300DB08B7 /* View */,
+				F4617BFA23DCB0B300DB08B7 /* Presenter */,
+				F4617C0023DCB0B300DB08B7 /* Interactor */,
+				F4617C0423DCB0B300DB08B7 /* Router */,
+				F4617BF623DCB0B300DB08B7 /* Storyboard */,
+			);
+			path = DayInfoModule;
+			sourceTree = "<group>";
+		};
+		F4617BF623DCB0B300DB08B7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BF723DCB0B300DB08B7 /* DayInfo.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4617BF823DCB0B300DB08B7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BF923DCB0B300DB08B7 /* DayInfoModuleAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F4617BFA23DCB0B300DB08B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BFB23DCB0B300DB08B7 /* DayInfoModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4617BFC23DCB0B300DB08B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BFD23DCB0B300DB08B7 /* DayInfoModuleView.swift */,
+				F4617BFE23DCB0B300DB08B7 /* DayInfoModuleViewInput.swift */,
+				F4617BFF23DCB0B300DB08B7 /* DayInfoModuleViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4617C0023DCB0B300DB08B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F4617C0123DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift */,
+				F4617C0223DCB0B300DB08B7 /* DayInfoModuleInteractor.swift */,
+				F4617C0323DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F4617C0423DCB0B300DB08B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F4617C0523DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift */,
+				F4617C0623DCB0B300DB08B7 /* DayInfoModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F4617C1223DCB0F300DB08B7 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4617BF523DCB0B300DB08B7 /* DayInfoModule */,
+				F499CF2723DCBFA00068E73F /* NextDaysInformationModule */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		F47D28FC23DC9BA1008F4ABE = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +615,128 @@
 				F47D292123DCA0D2008F4ABE /* ApplicationAssembly.swift */,
 			);
 			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		F499CF2223DCBE390068E73F /* Module's */ = {
+			isa = PBXGroup;
+			children = (
+				F4617B7623DCA38600DB08B7 /* TabBarModule */,
+				F4617BF223DCB02F00DB08B7 /* Home */,
+				F4617BB523DCA96D00DB08B7 /* MapModule */,
+				F4617BD523DCAAAB00DB08B7 /* SearchModule */,
+			);
+			path = "Module's";
+			sourceTree = "<group>";
+		};
+		F499CF2323DCBE560068E73F /* Manager's */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF2423DCBE7D0068E73F /* Network */,
+			);
+			path = "Manager's";
+			sourceTree = "<group>";
+		};
+		F499CF2423DCBE7D0068E73F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF2523DCBEDF0068E73F /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F499CF2723DCBFA00068E73F /* NextDaysInformationModule */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF2A23DCBFA00068E73F /* Assembly */,
+				F499CF2E23DCBFA00068E73F /* View */,
+				F499CF2C23DCBFA00068E73F /* Presenter */,
+				F499CF3223DCBFA00068E73F /* Interactor */,
+				F499CF3623DCBFA00068E73F /* Router */,
+				F499CF2823DCBFA00068E73F /* Storyboard */,
+			);
+			path = NextDaysInformationModule;
+			sourceTree = "<group>";
+		};
+		F499CF2823DCBFA00068E73F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF2923DCBFA00068E73F /* NextDaysInformation.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F499CF2A23DCBFA00068E73F /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF2B23DCBFA00068E73F /* NextDaysInformationModuleAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F499CF2C23DCBFA00068E73F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF2D23DCBFA00068E73F /* NextDaysInformationModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F499CF2E23DCBFA00068E73F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF3023DCBFA00068E73F /* NextDaysInformationModuleView.swift */,
+				F499CF2F23DCBFA00068E73F /* NextDaysInformationModuleViewInput.swift */,
+				F499CF3123DCBFA00068E73F /* NextDaysInformationModuleViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F499CF3223DCBFA00068E73F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF3323DCBFA00068E73F /* NextDaysInformationModuleInteractorInput.swift */,
+				F499CF3423DCBFA00068E73F /* NextDaysInformationModuleInteractor.swift */,
+				F499CF3523DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F499CF3623DCBFA00068E73F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F499CF3723DCBFA00068E73F /* NextDaysInformationModuleRouter.swift */,
+				F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F4D7F28C23DCEFB100B02FDF /* Extension's */ = {
+			isa = PBXGroup;
+			children = (
+				F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */,
+			);
+			path = "Extension's";
+			sourceTree = "<group>";
+		};
+		F4D7F28F23DCF3D200B02FDF /* Model's */ = {
+			isa = PBXGroup;
+			children = (
+				F4D7F29223DCF7DF00B02FDF /* Weather */,
+			);
+			path = "Model's";
+			sourceTree = "<group>";
+		};
+		F4D7F29223DCF7DF00B02FDF /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F4D7F29023DCF40900B02FDF /* WeatherIndicationsModel.swift */,
+				F4D7F29323DCF7F100B02FDF /* WeatherInfoModel.swift */,
+				F4D7F29523DCF9FE00B02FDF /* MainWeatherModel.swift */,
+				F4D7F29723DCFB9000B02FDF /* WindWeatherModel.swift */,
+				F4D7F29923DCFC0B00B02FDF /* CloudsWeatherModel.swift */,
+				F4D7F29B23DCFCA700B02FDF /* SystemWeatherModel.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,8 +799,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4617C0723DCB0B300DB08B7 /* DayInfo.storyboard in Resources */,
 				F47D291523DC9BA5008F4ABE /* LaunchScreen.storyboard in Resources */,
 				F4617B8823DCA38600DB08B7 /* TabBar.storyboard in Resources */,
+				F499CF3923DCBFA00068E73F /* NextDaysInformation.storyboard in Resources */,
 				F4617BC723DCA96D00DB08B7 /* Map.storyboard in Resources */,
 				F47D291223DC9BA5008F4ABE /* Assets.xcassets in Resources */,
 				F4617BE723DCAAAB00DB08B7 /* Search.storyboard in Resources */,
@@ -593,9 +861,14 @@
 			files = (
 				F4617BAB23DCA7D600DB08B7 /* HomeModuleViewOutput.swift in Sources */,
 				F4617BA823DCA7D600DB08B7 /* HomeModuleAssemblyContainer.swift in Sources */,
+				F499CF3C23DCBFA00068E73F /* NextDaysInformationModuleViewInput.swift in Sources */,
 				F4617BEC23DCAAAB00DB08B7 /* SearchModuleViewInput.swift in Sources */,
+				F4617C0923DCB0B300DB08B7 /* DayInfoModulePresenter.swift in Sources */,
 				F4617BAA23DCA7D600DB08B7 /* HomeModuleViewInput.swift in Sources */,
 				F4617BF023DCAAAB00DB08B7 /* SearchModuleRouterInput.swift in Sources */,
+				F499CF4223DCBFA00068E73F /* NextDaysInformationModuleRouter.swift in Sources */,
+				F499CF4123DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift in Sources */,
+				F4D7F29C23DCFCA700B02FDF /* SystemWeatherModel.swift in Sources */,
 				F4617B9123DCA38600DB08B7 /* TabBarModuleRouterInput.swift in Sources */,
 				F4617BB023DCA7D600DB08B7 /* HomeModuleRouter.swift in Sources */,
 				F4617BAD23DCA7D600DB08B7 /* HomeModuleInteractorInput.swift in Sources */,
@@ -603,15 +876,26 @@
 				F4617BCC23DCA96D00DB08B7 /* MapModuleViewInput.swift in Sources */,
 				F4617BCD23DCA96D00DB08B7 /* MapModuleInteractorInput.swift in Sources */,
 				F4617BC823DCA96D00DB08B7 /* MapModuleAssemblyContainer.swift in Sources */,
+				F4617C1123DCB0B300DB08B7 /* DayInfoModuleRouter.swift in Sources */,
 				F4617BE923DCAAAB00DB08B7 /* SearchModulePresenter.swift in Sources */,
 				F4617BCF23DCA96D00DB08B7 /* MapModuleInteractorOutput.swift in Sources */,
 				F4617B8A23DCA38600DB08B7 /* TabBarModulePresenter.swift in Sources */,
+				F499CF3E23DCBFA00068E73F /* NextDaysInformationModuleViewOutput.swift in Sources */,
+				F4D7F29A23DCFC0B00B02FDF /* CloudsWeatherModel.swift in Sources */,
+				F4617C0A23DCB0B300DB08B7 /* DayInfoModuleView.swift in Sources */,
 				F4617B8923DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift in Sources */,
 				F4617BED23DCAAAB00DB08B7 /* SearchModuleInteractorOutput.swift in Sources */,
 				F4617BAC23DCA7D600DB08B7 /* HomeModuleView.swift in Sources */,
+				F4617C0E23DCB0B300DB08B7 /* DayInfoModuleInteractor.swift in Sources */,
 				F4617BEB23DCAAAB00DB08B7 /* SearchModuleViewOutput.swift in Sources */,
+				F4617C0F23DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift in Sources */,
+				F499CF3A23DCBFA00068E73F /* NextDaysInformationModuleAssemblyContainer.swift in Sources */,
+				F499CF3F23DCBFA00068E73F /* NextDaysInformationModuleInteractorInput.swift in Sources */,
 				F4617B8E23DCA38600DB08B7 /* TabBarModuleInteractorInput.swift in Sources */,
 				F4617BAE23DCA7D600DB08B7 /* HomeModuleInteractor.swift in Sources */,
+				F499CF4323DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift in Sources */,
+				F499CF3B23DCBFA00068E73F /* NextDaysInformationModulePresenter.swift in Sources */,
+				F499CF3D23DCBFA00068E73F /* NextDaysInformationModuleView.swift in Sources */,
 				F4617BB123DCA7D600DB08B7 /* HomeModuleRouterInput.swift in Sources */,
 				F4617BEA23DCAAAB00DB08B7 /* SearchModuleView.swift in Sources */,
 				F4617B8C23DCA38600DB08B7 /* TabBarModuleViewInput.swift in Sources */,
@@ -619,9 +903,16 @@
 				F4617B8D23DCA38600DB08B7 /* TabBarModuleViewOutput.swift in Sources */,
 				F4617BEF23DCAAAB00DB08B7 /* SearchModuleInteractorInput.swift in Sources */,
 				F4617B8F23DCA38600DB08B7 /* TabBarModuleInteractorOutput.swift in Sources */,
+				F4617C0C23DCB0B300DB08B7 /* DayInfoModuleViewOutput.swift in Sources */,
+				F4617C0B23DCB0B300DB08B7 /* DayInfoModuleViewInput.swift in Sources */,
+				F4D7F29123DCF40900B02FDF /* WeatherIndicationsModel.swift in Sources */,
 				F4617BD123DCA96D00DB08B7 /* MapModuleRouter.swift in Sources */,
 				F4617BEE23DCAAAB00DB08B7 /* SearchModuleInteractor.swift in Sources */,
+				F499CF2623DCBEDF0068E73F /* NetworkManager.swift in Sources */,
+				F4D7F28E23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift in Sources */,
+				F4617C1023DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift in Sources */,
 				F4617BD023DCA96D00DB08B7 /* MapModuleRouterInput.swift in Sources */,
+				F4D7F29623DCF9FE00B02FDF /* MainWeatherModel.swift in Sources */,
 				F4617BCE23DCA96D00DB08B7 /* MapModuleInteractor.swift in Sources */,
 				F47D292223DCA0D2008F4ABE /* ApplicationAssembly.swift in Sources */,
 				F4617B9023DCA38600DB08B7 /* TabBarModuleInteractor.swift in Sources */,
@@ -629,10 +920,15 @@
 				F4617BCA23DCA96D00DB08B7 /* MapModuleViewOutput.swift in Sources */,
 				F4617BF123DCAAAB00DB08B7 /* SearchModuleRouter.swift in Sources */,
 				F4617B9223DCA38600DB08B7 /* TabBarModuleRouter.swift in Sources */,
+				F4D7F29423DCF7F100B02FDF /* WeatherInfoModel.swift in Sources */,
+				F4D7F29823DCFB9000B02FDF /* WindWeatherModel.swift in Sources */,
+				F4617C0D23DCB0B300DB08B7 /* DayInfoModuleInteractorOutput.swift in Sources */,
 				F47D290923DC9BA1008F4ABE /* AppDelegate.swift in Sources */,
 				F4617BA923DCA7D600DB08B7 /* HomeModulePresenter.swift in Sources */,
+				F4617C0823DCB0B300DB08B7 /* DayInfoModuleAssemblyContainer.swift in Sources */,
 				F4617BC923DCA96D00DB08B7 /* MapModulePresenter.swift in Sources */,
 				F4617BE823DCAAAB00DB08B7 /* SearchModuleAssemblyContainer.swift in Sources */,
+				F499CF4023DCBFA00068E73F /* NextDaysInformationModuleInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
