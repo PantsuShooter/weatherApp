@@ -79,6 +79,25 @@
 		F499CF4123DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3523DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift */; };
 		F499CF4223DCBFA00068E73F /* NextDaysInformationModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3723DCBFA00068E73F /* NextDaysInformationModuleRouter.swift */; };
 		F499CF4323DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */; };
+		F4C9617023EC8D6A0010EE35 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9616F23EC8D6A0010EE35 /* UIColor+Extension.swift */; };
+		F4C9617223EC8EBD0010EE35 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617123EC8EBD0010EE35 /* Color.xcassets */; };
+		F4C9618323ECB0910010EE35 /* 4795-weather-mist.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617423ECB0910010EE35 /* 4795-weather-mist.json */; };
+		F4C9618423ECB0910010EE35 /* 4806-weather-windy.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617523ECB0910010EE35 /* 4806-weather-windy.json */; };
+		F4C9618523ECB0910010EE35 /* 4800-weather-partly-cloudy.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617623ECB0910010EE35 /* 4800-weather-partly-cloudy.json */; };
+		F4C9618623ECB0910010EE35 /* 4792-weather-stormshowersday.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617723ECB0910010EE35 /* 4792-weather-stormshowersday.json */; };
+		F4C9618723ECB0910010EE35 /* 4793-weather-snow.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617823ECB0910010EE35 /* 4793-weather-snow.json */; };
+		F4C9618823ECB0910010EE35 /* 4797-weather-rainynight.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617923ECB0910010EE35 /* 4797-weather-rainynight.json */; };
+		F4C9618923ECB0910010EE35 /* 4798-weather-snownight.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617A23ECB0910010EE35 /* 4798-weather-snownight.json */; };
+		F4C9618A23ECB0910010EE35 /* 4802-weather-snow-sunny.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617B23ECB0910010EE35 /* 4802-weather-snow-sunny.json */; };
+		F4C9618B23ECB0910010EE35 /* 4801-weather-partly-shower.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617C23ECB0910010EE35 /* 4801-weather-partly-shower.json */; };
+		F4C9618C23ECB0910010EE35 /* 4805-weather-thunder.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617D23ECB0910010EE35 /* 4805-weather-thunder.json */; };
+		F4C9618D23ECB0910010EE35 /* 4803-weather-storm.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617E23ECB0910010EE35 /* 4803-weather-storm.json */; };
+		F4C9618E23ECB0910010EE35 /* 4804-weather-sunny.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9617F23ECB0910010EE35 /* 4804-weather-sunny.json */; };
+		F4C9618F23ECB0910010EE35 /* 4796-weather-cloudynight.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9618023ECB0910010EE35 /* 4796-weather-cloudynight.json */; };
+		F4C9619023ECB0910010EE35 /* 4799-weather-night.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9618123ECB0910010EE35 /* 4799-weather-night.json */; };
+		F4C9619123ECB0910010EE35 /* 4791-foggy.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C9618223ECB0910010EE35 /* 4791-foggy.json */; };
+		F4C9619323ECBC0A0010EE35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9619223ECBC0A0010EE35 /* UIView+Extension.swift */; };
+		F4C9619623ECBE8D0010EE35 /* WeatheIconName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9619523ECBE8D0010EE35 /* WeatheIconName.swift */; };
 		F4CC74F123DDE6DB00C71835 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC74F023DDE6DB00C71835 /* CityCollectionViewCell.swift */; };
 		F4CC74F323DDE6F700C71835 /* AddNewCityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC74F223DDE6F700C71835 /* AddNewCityCollectionViewCell.swift */; };
 		F4D7F28E23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */; };
@@ -167,6 +186,25 @@
 		F499CF3523DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleInteractorOutput.swift; sourceTree = "<group>"; };
 		F499CF3723DCBFA00068E73F /* NextDaysInformationModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleRouter.swift; sourceTree = "<group>"; };
 		F499CF3823DCBFA00068E73F /* NextDaysInformationModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextDaysInformationModuleRouterInput.swift; sourceTree = "<group>"; };
+		F4C9616F23EC8D6A0010EE35 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F4C9617123EC8EBD0010EE35 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		F4C9617423ECB0910010EE35 /* 4795-weather-mist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4795-weather-mist.json"; sourceTree = "<group>"; };
+		F4C9617523ECB0910010EE35 /* 4806-weather-windy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4806-weather-windy.json"; sourceTree = "<group>"; };
+		F4C9617623ECB0910010EE35 /* 4800-weather-partly-cloudy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4800-weather-partly-cloudy.json"; sourceTree = "<group>"; };
+		F4C9617723ECB0910010EE35 /* 4792-weather-stormshowersday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4792-weather-stormshowersday.json"; sourceTree = "<group>"; };
+		F4C9617823ECB0910010EE35 /* 4793-weather-snow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4793-weather-snow.json"; sourceTree = "<group>"; };
+		F4C9617923ECB0910010EE35 /* 4797-weather-rainynight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4797-weather-rainynight.json"; sourceTree = "<group>"; };
+		F4C9617A23ECB0910010EE35 /* 4798-weather-snownight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4798-weather-snownight.json"; sourceTree = "<group>"; };
+		F4C9617B23ECB0910010EE35 /* 4802-weather-snow-sunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4802-weather-snow-sunny.json"; sourceTree = "<group>"; };
+		F4C9617C23ECB0910010EE35 /* 4801-weather-partly-shower.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4801-weather-partly-shower.json"; sourceTree = "<group>"; };
+		F4C9617D23ECB0910010EE35 /* 4805-weather-thunder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4805-weather-thunder.json"; sourceTree = "<group>"; };
+		F4C9617E23ECB0910010EE35 /* 4803-weather-storm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4803-weather-storm.json"; sourceTree = "<group>"; };
+		F4C9617F23ECB0910010EE35 /* 4804-weather-sunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4804-weather-sunny.json"; sourceTree = "<group>"; };
+		F4C9618023ECB0910010EE35 /* 4796-weather-cloudynight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4796-weather-cloudynight.json"; sourceTree = "<group>"; };
+		F4C9618123ECB0910010EE35 /* 4799-weather-night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4799-weather-night.json"; sourceTree = "<group>"; };
+		F4C9618223ECB0910010EE35 /* 4791-foggy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4791-foggy.json"; sourceTree = "<group>"; };
+		F4C9619223ECBC0A0010EE35 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F4C9619523ECBE8D0010EE35 /* WeatheIconName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheIconName.swift; sourceTree = "<group>"; };
 		F4CC74F023DDE6DB00C71835 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4CC74F223DDE6F700C71835 /* AddNewCityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCityCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
@@ -594,6 +632,8 @@
 				F4617B6F23DCA25A00DB08B7 /* ApplicationLayer */,
 				F47D291C23DCA013008F4ABE /* General */,
 				F47D291D23DCA067008F4ABE /* Xcassets */,
+				F4C9619423ECBE420010EE35 /* Additions */,
+				F4C9617323ECB0910010EE35 /* LotiWeatherAnimations */,
 				F47D291623DC9BA5008F4ABE /* Info.plist */,
 			);
 			path = WetherApp;
@@ -611,6 +651,7 @@
 			isa = PBXGroup;
 			children = (
 				F47D291123DC9BA5008F4ABE /* Assets.xcassets */,
+				F4C9617123EC8EBD0010EE35 /* Color.xcassets */,
 			);
 			path = Xcassets;
 			sourceTree = "<group>";
@@ -716,6 +757,36 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		F4C9617323ECB0910010EE35 /* LotiWeatherAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9617423ECB0910010EE35 /* 4795-weather-mist.json */,
+				F4C9617523ECB0910010EE35 /* 4806-weather-windy.json */,
+				F4C9617623ECB0910010EE35 /* 4800-weather-partly-cloudy.json */,
+				F4C9617723ECB0910010EE35 /* 4792-weather-stormshowersday.json */,
+				F4C9617823ECB0910010EE35 /* 4793-weather-snow.json */,
+				F4C9617923ECB0910010EE35 /* 4797-weather-rainynight.json */,
+				F4C9617A23ECB0910010EE35 /* 4798-weather-snownight.json */,
+				F4C9617B23ECB0910010EE35 /* 4802-weather-snow-sunny.json */,
+				F4C9617C23ECB0910010EE35 /* 4801-weather-partly-shower.json */,
+				F4C9617D23ECB0910010EE35 /* 4805-weather-thunder.json */,
+				F4C9617E23ECB0910010EE35 /* 4803-weather-storm.json */,
+				F4C9617F23ECB0910010EE35 /* 4804-weather-sunny.json */,
+				F4C9618023ECB0910010EE35 /* 4796-weather-cloudynight.json */,
+				F4C9618123ECB0910010EE35 /* 4799-weather-night.json */,
+				F4C9618223ECB0910010EE35 /* 4791-foggy.json */,
+			);
+			path = LotiWeatherAnimations;
+			sourceTree = "<group>";
+		};
+		F4C9619423ECBE420010EE35 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9619523ECBE8D0010EE35 /* WeatheIconName.swift */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 		F4CC74EC23DDD83E00C71835 /* Xib's */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,6 +807,8 @@
 			isa = PBXGroup;
 			children = (
 				F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */,
+				F4C9616F23EC8D6A0010EE35 /* UIColor+Extension.swift */,
+				F4C9619223ECBC0A0010EE35 /* UIView+Extension.swift */,
 			);
 			path = "Extension's";
 			sourceTree = "<group>";
@@ -822,13 +895,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4617C0723DCB0B300DB08B7 /* DayInfo.storyboard in Resources */,
+				F4C9618D23ECB0910010EE35 /* 4803-weather-storm.json in Resources */,
 				F47D291523DC9BA5008F4ABE /* LaunchScreen.storyboard in Resources */,
 				F4617B8823DCA38600DB08B7 /* TabBar.storyboard in Resources */,
 				F499CF3923DCBFA00068E73F /* NextDaysInformation.storyboard in Resources */,
+				F4C9619123ECB0910010EE35 /* 4791-foggy.json in Resources */,
+				F4C9618F23ECB0910010EE35 /* 4796-weather-cloudynight.json in Resources */,
+				F4C9618323ECB0910010EE35 /* 4795-weather-mist.json in Resources */,
+				F4C9618E23ECB0910010EE35 /* 4804-weather-sunny.json in Resources */,
+				F4C9618B23ECB0910010EE35 /* 4801-weather-partly-shower.json in Resources */,
+				F4C9619023ECB0910010EE35 /* 4799-weather-night.json in Resources */,
+				F4C9618623ECB0910010EE35 /* 4792-weather-stormshowersday.json in Resources */,
 				F4617BC723DCA96D00DB08B7 /* Map.storyboard in Resources */,
+				F4C9618423ECB0910010EE35 /* 4806-weather-windy.json in Resources */,
 				F47D291223DC9BA5008F4ABE /* Assets.xcassets in Resources */,
 				F4617BE723DCAAAB00DB08B7 /* Search.storyboard in Resources */,
+				F4C9618923ECB0910010EE35 /* 4798-weather-snownight.json in Resources */,
+				F4C9618823ECB0910010EE35 /* 4797-weather-rainynight.json in Resources */,
+				F4C9618C23ECB0910010EE35 /* 4805-weather-thunder.json in Resources */,
+				F4C9618723ECB0910010EE35 /* 4793-weather-snow.json in Resources */,
 				F4617BA723DCA7D600DB08B7 /* Home.storyboard in Resources */,
+				F4C9618523ECB0910010EE35 /* 4800-weather-partly-cloudy.json in Resources */,
+				F4C9617223EC8EBD0010EE35 /* Color.xcassets in Resources */,
+				F4C9618A23ECB0910010EE35 /* 4802-weather-snow-sunny.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,8 +980,10 @@
 				F499CF4223DCBFA00068E73F /* NextDaysInformationModuleRouter.swift in Sources */,
 				F499CF4123DCBFA00068E73F /* NextDaysInformationModuleInteractorOutput.swift in Sources */,
 				F4D7F29C23DCFCA700B02FDF /* SystemWeatherModel.swift in Sources */,
+				F4C9619623ECBE8D0010EE35 /* WeatheIconName.swift in Sources */,
 				F4617B9123DCA38600DB08B7 /* TabBarModuleRouterInput.swift in Sources */,
 				F4617BB023DCA7D600DB08B7 /* HomeModuleRouter.swift in Sources */,
+				F4C9617023EC8D6A0010EE35 /* UIColor+Extension.swift in Sources */,
 				F4617BAD23DCA7D600DB08B7 /* HomeModuleInteractorInput.swift in Sources */,
 				F4617B8B23DCA38600DB08B7 /* TabBarModuleView.swift in Sources */,
 				F4617BCC23DCA96D00DB08B7 /* MapModuleViewInput.swift in Sources */,
@@ -910,6 +1001,7 @@
 				F4617BAC23DCA7D600DB08B7 /* HomeModuleView.swift in Sources */,
 				F4617C0E23DCB0B300DB08B7 /* DayInfoModuleInteractor.swift in Sources */,
 				F4617BEB23DCAAAB00DB08B7 /* SearchModuleViewOutput.swift in Sources */,
+				F4C9619323ECBC0A0010EE35 /* UIView+Extension.swift in Sources */,
 				F4617C0F23DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift in Sources */,
 				F499CF3A23DCBFA00068E73F /* NextDaysInformationModuleAssemblyContainer.swift in Sources */,
 				F499CF3F23DCBFA00068E73F /* NextDaysInformationModuleInteractorInput.swift in Sources */,

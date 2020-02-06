@@ -23,6 +23,10 @@ final class DayInfoModulePresenter: DayInfoModuleViewOutput {
         self.currentCoordinate = coordinates
         interactor.requestWeatherBy(latitude: coordinates.latitude, andLongitude: coordinates.longitude)
     }
+    
+    func getCurrentWeather() -> WeatherIndicationsModel? {
+        return currentWeather
+    }
 }
 
 extension DayInfoModulePresenter: DayInfoModuleInteractorOutput {

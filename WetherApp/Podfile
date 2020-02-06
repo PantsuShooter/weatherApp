@@ -15,6 +15,9 @@ target 'WetherApp' do
       
   # LOCATION
       pod 'SwiftLocation'
+      
+  # UI
+      pod 'lottie-ios'
 
 
 end

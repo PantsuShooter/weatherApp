@@ -9,5 +9,9 @@
 import MapKit
 
 protocol DayInfoModuleViewOutput: class {
+    
     func setUpdated(coordinates: CLLocationCoordinate2D)
+    
+    func getCurrentWeather() -> WeatherIndicationsModel?
+    
 }

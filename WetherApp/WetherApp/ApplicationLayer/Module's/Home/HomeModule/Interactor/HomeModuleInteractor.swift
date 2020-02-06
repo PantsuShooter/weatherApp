@@ -14,6 +14,7 @@ final class HomeModuleInteractor: HomeModuleInteractorInput {
     public var output: HomeModuleInteractorOutput!
     
     func startRequestLocationCoordinates() {
+        
         LocationManager.shared.locateFromGPS(.continous, accuracy: .any) { [weak self] result in
             switch result {
             case .failure(let error):

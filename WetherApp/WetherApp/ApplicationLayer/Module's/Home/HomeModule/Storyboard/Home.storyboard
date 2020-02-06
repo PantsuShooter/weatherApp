@@ -1,159 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--NextDaysInformation-->
+        <scene sceneID="jVd-5B-uAx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NextDaysInformation" id="ood-8C-qcK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdr-sA-8Kh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416" y="238"/>
+        </scene>
+        <!--DayInfo-->
+        <scene sceneID="Lek-l1-BgK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DayInfo" id="oqD-Vj-UQ3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyu-Yi-tsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="-83"/>
+        </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="HomeModuleView" id="BYZ-38-t0r" customClass="HomeModuleView" customModule="WetherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wql-Zh-Yji">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BpK-4M-wqY">
-                                    <size key="itemSize" width="411" height="766"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="w9o-e7-9dc"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Mme-Ge-sWo"/>
-                                </connections>
-                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="evE-sj-C8w">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617.5"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkO-cg-Uc2" userLabel="Day Info Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="444"/>
+                                        <connections>
+                                            <segue destination="oqD-Vj-UQ3" kind="embed" id="JvD-AC-dnO"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgv-kA-3bm">
+                                        <rect key="frame" x="0.0" y="444" width="375" height="173.5"/>
+                                        <connections>
+                                            <segue destination="ood-8C-qcK" kind="embed" id="U1K-zq-wh7"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dkO-cg-Uc2" firstAttribute="height" secondItem="evE-sj-C8w" secondAttribute="height" multiplier="0.719028" id="Icm-VT-jxz"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Wql-Zh-Yji" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EIP-sS-YlS"/>
-                            <constraint firstItem="Wql-Zh-Yji" firstAttribute="top" secondItem="9JP-z6-zH3" secondAttribute="top" id="sLp-sz-Aeu"/>
-                            <constraint firstAttribute="trailing" secondItem="Wql-Zh-Yji" secondAttribute="trailing" id="tWw-Ef-5pA"/>
-                            <constraint firstItem="9JP-z6-zH3" firstAttribute="bottom" secondItem="Wql-Zh-Yji" secondAttribute="bottom" id="uEw-qf-Nc7"/>
+                            <constraint firstItem="evE-sj-C8w" firstAttribute="trailing" secondItem="9JP-z6-zH3" secondAttribute="trailing" id="IJC-BB-Lge"/>
+                            <constraint firstItem="evE-sj-C8w" firstAttribute="leading" secondItem="9JP-z6-zH3" secondAttribute="leading" id="JMy-Ct-Sxo"/>
+                            <constraint firstItem="evE-sj-C8w" firstAttribute="top" secondItem="9JP-z6-zH3" secondAttribute="top" id="gjp-Uz-wHT"/>
+                            <constraint firstItem="9JP-z6-zH3" firstAttribute="bottom" secondItem="evE-sj-C8w" secondAttribute="bottom" constant="0.5" id="zBm-Oi-Wka"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9JP-z6-zH3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="LfS-w4-2Ii"/>
                     <navigationItem key="navigationItem" id="jji-uH-Yqx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="collectionView" destination="Wql-Zh-Yji" id="kMM-Xk-ZYd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addNewCityCellID" id="kZ1-Le-V53" customClass="AddNewCityCollectionViewCell" customModule="WetherApp" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="411" height="769"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zI9-lu-641">
-                        <rect key="frame" x="0.0" y="0.0" width="411" height="769"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-7E-Cfg">
-                                <rect key="frame" x="55" y="234" width="301" height="301"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Or-Nw-vyi">
-                                        <rect key="frame" x="0.0" y="0.0" width="301" height="277.5"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                        <state key="normal" image="plus" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="200" scale="large"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addNewCity:" destination="kZ1-Le-V53" eventType="touchUpInside" id="ME4-K7-9Ip"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRY-x6-2Fo">
-                                        <rect key="frame" x="0.0" y="277.5" width="301" height="23.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="OVh-7E-Cfg" secondAttribute="height" multiplier="300:300" id="wFU-aJ-lgk"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="OVh-7E-Cfg" firstAttribute="centerX" secondItem="zI9-lu-641" secondAttribute="centerX" id="5Te-oH-NDS"/>
-                            <constraint firstItem="OVh-7E-Cfg" firstAttribute="leading" secondItem="zI9-lu-641" secondAttribute="leading" constant="55" id="gvw-Jv-XTh"/>
-                            <constraint firstItem="OVh-7E-Cfg" firstAttribute="centerY" secondItem="zI9-lu-641" secondAttribute="centerY" id="sB4-pA-UEn"/>
-                            <constraint firstAttribute="trailing" secondItem="OVh-7E-Cfg" secondAttribute="trailing" constant="55" id="y8j-i4-pww"/>
-                        </constraints>
-                    </collectionViewCellContentView>
-                    <connections>
-                        <outlet property="addNewCityButton" destination="1Or-Nw-vyi" id="2Fj-NK-jkd"/>
-                    </connections>
-                </collectionViewCell>
-                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cityCellID" id="R5G-RR-zd4" customClass="CityCollectionViewCell" customModule="WetherApp" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="411" height="769"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9a5-Qt-bMP">
-                        <rect key="frame" x="0.0" y="0.0" width="411" height="769"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="evE-sj-C8w">
-                                <rect key="frame" x="0.0" y="0.0" width="411" height="769"/>
-                                <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkO-cg-Uc2" userLabel="Day Info Container">
-                                        <rect key="frame" x="0.0" y="0.0" width="411" height="500"/>
-                                        <connections>
-                                            <segue destination="v6x-vS-dUI" kind="embed" id="9Rp-nk-Pzu"/>
-                                        </connections>
-                                    </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgv-kA-3bm">
-                                        <rect key="frame" x="0.0" y="500" width="411" height="269"/>
-                                        <connections>
-                                            <segue destination="xgO-hm-5sa" kind="embed" id="65K-rO-bys"/>
-                                        </connections>
-                                    </containerView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="evE-sj-C8w" firstAttribute="leading" secondItem="9a5-Qt-bMP" secondAttribute="leading" id="PXW-tQ-J1v"/>
-                            <constraint firstAttribute="bottom" secondItem="evE-sj-C8w" secondAttribute="bottom" id="fUh-ln-Qfu"/>
-                            <constraint firstAttribute="trailing" secondItem="evE-sj-C8w" secondAttribute="trailing" id="jMB-nT-ebE"/>
-                            <constraint firstItem="dkO-cg-Uc2" firstAttribute="height" secondItem="9a5-Qt-bMP" secondAttribute="height" multiplier="0.650195" id="sZ7-F5-gmb"/>
-                            <constraint firstItem="evE-sj-C8w" firstAttribute="top" secondItem="9a5-Qt-bMP" secondAttribute="top" id="yDu-xD-1Pt"/>
-                        </constraints>
-                    </collectionViewCellContentView>
-                    <size key="customSize" width="411" height="769"/>
-                </collectionViewCell>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="99.776785714285708"/>
-        </scene>
-        <!--NextDaysInformation-->
-        <scene sceneID="LI5-6i-Fkr">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NextDaysInformation" id="xgO-hm-5sa" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja0-Gn-Snm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-119" y="-342"/>
-        </scene>
-        <!--DayInfo-->
-        <scene sceneID="Y6l-BT-tfY">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DayInfo" id="v6x-vS-dUI" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SdD-O2-mj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-118" y="-605"/>
+            <point key="canvasLocation" x="799.20000000000005" y="99.400299850074973"/>
         </scene>
     </scenes>
     <resources>
         <image name="house" catalog="system" width="64" height="54"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>

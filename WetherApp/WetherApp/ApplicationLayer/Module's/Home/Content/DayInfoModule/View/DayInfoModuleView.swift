@@ -7,30 +7,110 @@
 //
 
 import UIKit
+import Lottie
+
 
 class DayInfoModuleView: UIViewController {
     
+    struct Const {
+        static let kelvin: Double = 273.15
+    }
+    
     var output: DayInfoModuleViewOutput!
     
-    @IBOutlet weak var currentInformationView: UIView!
     @IBOutlet weak var dayTimeCollectionView: UICollectionView!
+    
+    @IBOutlet weak var currentInformationView: UIView!
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var currentWeatherAnimationView: AnimationView!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var hygrometerLabel: UILabel!
+    @IBOutlet weak var windLabel: UILabel!
+    @IBOutlet weak var arrowImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+        
     }
 }
 
+//MARK:- Setup
 extension DayInfoModuleView {
     
     private func setupUI() {
         
+        setupDate()
+        
+        updateWeatherViews()
+        
     }
     
+    private func setupDate() {
+        
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "E, d MMMM"
+        dateLabel.text = dateFormatter.string(from: date)
+    }
+}
+
+//MARK:- Private
+extension DayInfoModuleView {
+    
+    private func updateWeatherViews() {
+        
+        guard let weather = output.getCurrentWeather() else { return }
+        
+        cityNameLabel.text = weather.name
+        temperatureLabel.text = "\(weather.main.tempMax - Const.kelvin)°/\(weather.main.tempMin - Const.kelvin)°"
+        hygrometerLabel.text = "\(weather.main.humidity)%"
+        windLabel.text = "\(Int(weather.wind.speed))m/sec"
+        arrowImage.rotate(angle: CGFloat(weather.wind.deg))
+        guard let type = WeatheIconName(rawValue: weather.weather[0].icon) else { return }
+        setWeatherAnimationBy(type: type)
+    }
+    
+    private func setWeatherAnimationBy(type: WeatheIconName) {
+        
+        let animation = Animation.named(type.animationLotiJsonName)
+        currentWeatherAnimationView.animation = animation
+        currentWeatherAnimationView.backgroundColor = .clear
+        currentWeatherAnimationView.loopMode = .loop
+        currentWeatherAnimationView.play()
+        
+    }
+}
+
+//MARK:-  Actions
+extension DayInfoModuleView {
+
+    @IBAction func locationButton(_ sender: Any) {
+        
+    }
+}
+
+//MARK:- UICollectionViewDataSource, UICollectionViewDelegate
+extension DayInfoModuleView: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
 }
 
 extension DayInfoModuleView: DayInfoModuleViewInput {
+    
     func weatherWasUpdated() {
         
+        updateWeatherViews()
+        
+//        let wether = output.getCurrentWeather()
+//        debugPrint(wether)
     }
 }

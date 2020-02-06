@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "rainBlack.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "kisspng-icon-fashion-flat-city-illustration-5aa6b43c77f0f6.4170853115208745564913.jpg",
       "scale" : "2x"
     },
     {
