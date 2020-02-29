@@ -9,6 +9,8 @@
 protocol DayInfoModuleInteractorOutput: class {
     
     func weatherUpdateWith(indications: WeatherIndicationsModel)
+    func hourlyWeatherUpdateWith(indications: WeatherHourIndicationsModel)
+    
     func weatherUpdateWith(error: Error)
     
 }

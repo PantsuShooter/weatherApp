@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F11E3539EC072193167E6D83 /* Pods_WetherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F1C208BD11F59F5AF25F94 /* Pods_WetherApp.framework */; };
+		F4146CF7240172EC0007AD37 /* WeatherListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4146CF6240172EC0007AD37 /* WeatherListModel.swift */; };
+		F4146CF92401A19D0007AD37 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4146CF82401A19D0007AD37 /* UIApplication+Extension.swift */; };
+		F45803B823EDD7CD00CC66A5 /* DayInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45803B723EDD7CD00CC66A5 /* DayInfoCell.xib */; };
+		F45803BA23EDD7DD00CC66A5 /* DayInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45803B923EDD7DD00CC66A5 /* DayInfoCell.swift */; };
 		F4617B8823DCA38600DB08B7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4617B7823DCA38600DB08B7 /* TabBar.storyboard */; };
 		F4617B8923DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B7A23DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift */; };
 		F4617B8A23DCA38600DB08B7 /* TabBarModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617B7C23DCA38600DB08B7 /* TabBarModulePresenter.swift */; };
@@ -63,6 +67,7 @@
 		F4617C0F23DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0323DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift */; };
 		F4617C1023DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0523DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift */; };
 		F4617C1123DCB0B300DB08B7 /* DayInfoModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4617C0623DCB0B300DB08B7 /* DayInfoModuleRouter.swift */; };
+		F46EB4F124015FF100294D69 /* WeatherHourIndicationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46EB4F024015FF100294D69 /* WeatherHourIndicationsModel.swift */; };
 		F47D290923DC9BA1008F4ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D290823DC9BA1008F4ABE /* AppDelegate.swift */; };
 		F47D291223DC9BA5008F4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47D291123DC9BA5008F4ABE /* Assets.xcassets */; };
 		F47D291523DC9BA5008F4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47D291323DC9BA5008F4ABE /* LaunchScreen.storyboard */; };
@@ -113,6 +118,10 @@
 		3265821D4107FC351A71C692 /* Pods-WetherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetherApp.release.xcconfig"; path = "Target Support Files/Pods-WetherApp/Pods-WetherApp.release.xcconfig"; sourceTree = "<group>"; };
 		32A27F3630DB6F91931B2D2C /* Pods-WetherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetherApp.debug.xcconfig"; path = "Target Support Files/Pods-WetherApp/Pods-WetherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A7F1C208BD11F59F5AF25F94 /* Pods_WetherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WetherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4146CF6240172EC0007AD37 /* WeatherListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListModel.swift; sourceTree = "<group>"; };
+		F4146CF82401A19D0007AD37 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		F45803B723EDD7CD00CC66A5 /* DayInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayInfoCell.xib; sourceTree = "<group>"; };
+		F45803B923EDD7DD00CC66A5 /* DayInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfoCell.swift; sourceTree = "<group>"; };
 		F4617B7823DCA38600DB08B7 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		F4617B7A23DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModuleAssemblyContainer.swift; sourceTree = "<group>"; };
 		F4617B7C23DCA38600DB08B7 /* TabBarModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModulePresenter.swift; sourceTree = "<group>"; };
@@ -168,6 +177,7 @@
 		F4617C0323DCB0B300DB08B7 /* DayInfoModuleInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleInteractorInput.swift; sourceTree = "<group>"; };
 		F4617C0523DCB0B300DB08B7 /* DayInfoModuleRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleRouterInput.swift; sourceTree = "<group>"; };
 		F4617C0623DCB0B300DB08B7 /* DayInfoModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoModuleRouter.swift; sourceTree = "<group>"; };
+		F46EB4F024015FF100294D69 /* WeatherHourIndicationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHourIndicationsModel.swift; sourceTree = "<group>"; };
 		F47D290523DC9BA1008F4ABE /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47D290823DC9BA1008F4ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47D291123DC9BA5008F4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -243,6 +253,15 @@
 				A7F1C208BD11F59F5AF25F94 /* Pods_WetherApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45803B623EDD78F00CC66A5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F45803B723EDD7CD00CC66A5 /* DayInfoCell.xib */,
+				F45803B923EDD7DD00CC66A5 /* DayInfoCell.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		F4617B6F23DCA25A00DB08B7 /* ApplicationLayer */ = {
@@ -332,7 +351,7 @@
 				F4617BA023DCA7D600DB08B7 /* Interactor */,
 				F4617BA423DCA7D600DB08B7 /* Router */,
 				F4617B9623DCA7D600DB08B7 /* Storyboard */,
-				F4CC74EF23DDE6AB00C71835 /* Suport */,
+				F4CC74EF23DDE6AB00C71835 /* Support */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -540,6 +559,7 @@
 				F4617C0023DCB0B300DB08B7 /* Interactor */,
 				F4617C0423DCB0B300DB08B7 /* Router */,
 				F4617BF623DCB0B300DB08B7 /* Storyboard */,
+				F45803B623EDD78F00CC66A5 /* Support */,
 			);
 			path = DayInfoModule;
 			sourceTree = "<group>";
@@ -794,13 +814,13 @@
 			path = "Xib's";
 			sourceTree = "<group>";
 		};
-		F4CC74EF23DDE6AB00C71835 /* Suport */ = {
+		F4CC74EF23DDE6AB00C71835 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				F4CC74F023DDE6DB00C71835 /* CityCollectionViewCell.swift */,
 				F4CC74F223DDE6F700C71835 /* AddNewCityCollectionViewCell.swift */,
 			);
-			path = Suport;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		F4D7F28C23DCEFB100B02FDF /* Extension's */ = {
@@ -809,6 +829,7 @@
 				F4D7F28D23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift */,
 				F4C9616F23EC8D6A0010EE35 /* UIColor+Extension.swift */,
 				F4C9619223ECBC0A0010EE35 /* UIView+Extension.swift */,
+				F4146CF82401A19D0007AD37 /* UIApplication+Extension.swift */,
 			);
 			path = "Extension's";
 			sourceTree = "<group>";
@@ -824,6 +845,8 @@
 		F4D7F29223DCF7DF00B02FDF /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				F46EB4F024015FF100294D69 /* WeatherHourIndicationsModel.swift */,
+				F4146CF6240172EC0007AD37 /* WeatherListModel.swift */,
 				F4D7F29023DCF40900B02FDF /* WeatherIndicationsModel.swift */,
 				F4D7F29323DCF7F100B02FDF /* WeatherInfoModel.swift */,
 				F4D7F29523DCF9FE00B02FDF /* MainWeatherModel.swift */,
@@ -904,6 +927,7 @@
 				F4C9618323ECB0910010EE35 /* 4795-weather-mist.json in Resources */,
 				F4C9618E23ECB0910010EE35 /* 4804-weather-sunny.json in Resources */,
 				F4C9618B23ECB0910010EE35 /* 4801-weather-partly-shower.json in Resources */,
+				F45803B823EDD7CD00CC66A5 /* DayInfoCell.xib in Resources */,
 				F4C9619023ECB0910010EE35 /* 4799-weather-night.json in Resources */,
 				F4C9618623ECB0910010EE35 /* 4792-weather-stormshowersday.json in Resources */,
 				F4617BC723DCA96D00DB08B7 /* Map.storyboard in Resources */,
@@ -996,6 +1020,7 @@
 				F499CF3E23DCBFA00068E73F /* NextDaysInformationModuleViewOutput.swift in Sources */,
 				F4D7F29A23DCFC0B00B02FDF /* CloudsWeatherModel.swift in Sources */,
 				F4617C0A23DCB0B300DB08B7 /* DayInfoModuleView.swift in Sources */,
+				F45803BA23EDD7DD00CC66A5 /* DayInfoCell.swift in Sources */,
 				F4617B8923DCA38600DB08B7 /* TabBarModuleAssemblyContainer.swift in Sources */,
 				F4617BED23DCAAAB00DB08B7 /* SearchModuleInteractorOutput.swift in Sources */,
 				F4617BAC23DCA7D600DB08B7 /* HomeModuleView.swift in Sources */,
@@ -1019,8 +1044,10 @@
 				F4617B8F23DCA38600DB08B7 /* TabBarModuleInteractorOutput.swift in Sources */,
 				F4617C0C23DCB0B300DB08B7 /* DayInfoModuleViewOutput.swift in Sources */,
 				F4617C0B23DCB0B300DB08B7 /* DayInfoModuleViewInput.swift in Sources */,
+				F4146CF7240172EC0007AD37 /* WeatherListModel.swift in Sources */,
 				F4D7F29123DCF40900B02FDF /* WeatherIndicationsModel.swift in Sources */,
 				F4617BD123DCA96D00DB08B7 /* MapModuleRouter.swift in Sources */,
+				F4146CF92401A19D0007AD37 /* UIApplication+Extension.swift in Sources */,
 				F4617BEE23DCAAAB00DB08B7 /* SearchModuleInteractor.swift in Sources */,
 				F499CF2623DCBEDF0068E73F /* NetworkManager.swift in Sources */,
 				F4D7F28E23DCEFDA00B02FDF /* CLLocationCoordinate2D+Extension.swift in Sources */,
@@ -1043,6 +1070,7 @@
 				F4617BA923DCA7D600DB08B7 /* HomeModulePresenter.swift in Sources */,
 				F4617C0823DCB0B300DB08B7 /* DayInfoModuleAssemblyContainer.swift in Sources */,
 				F4617BC923DCA96D00DB08B7 /* MapModulePresenter.swift in Sources */,
+				F46EB4F124015FF100294D69 /* WeatherHourIndicationsModel.swift in Sources */,
 				F4617BE823DCAAAB00DB08B7 /* SearchModuleAssemblyContainer.swift in Sources */,
 				F499CF4023DCBFA00068E73F /* NextDaysInformationModuleInteractor.swift in Sources */,
 			);

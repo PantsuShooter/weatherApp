@@ -9,5 +9,6 @@
 protocol DayInfoModuleInteractorInput: class {
     
     func requestWeatherBy(latitude :Double, andLongitude: Double)
+    func requestHourlyWeatherBy(latitude :Double, andLongitude: Double)
     
 }

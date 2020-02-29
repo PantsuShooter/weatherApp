@@ -14,4 +14,7 @@ protocol DayInfoModuleViewOutput: class {
     
     func getCurrentWeather() -> WeatherIndicationsModel?
     
+    func getHourlyWeatherCount() -> Int
+    func getHourlyWeatherAt(index: Int) -> WeatherListModel?
+    
 }

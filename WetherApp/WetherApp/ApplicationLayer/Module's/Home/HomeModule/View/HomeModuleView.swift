@@ -31,6 +31,8 @@ class HomeModuleView: UIViewController {
         super.viewDidLoad()
                 
         output.startGettingCoordinates()
+        
+        UIApplication.shared.statusBarView?.backgroundColor = .darkBrue
     }
 }
 

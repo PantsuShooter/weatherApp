@@ -25,6 +25,7 @@ struct APPURL {
     private static let BaseURL = Domain + Route
         
     static var weather: String {return BaseURL + "weather"}
+    static var weatherForecastHourly: String {return BaseURL + "forecast" }
 }
 
 class NetworkManager {
@@ -51,6 +52,34 @@ class NetworkManager {
                     completionBlock(nil, error)
                 }
                 debugPrint(response)
+            case .failure(let error):
+                if let error = error as NSError? {
+                    debugPrint(error)
+                }
+            }
+        }
+    }
+    
+    public func getWeatherHourlyBy(latitude: Double, longitude: Double ,completionBlock: @escaping ( _ weather: WeatherHourIndicationsModel?,  _ error: Error?) -> ()) {
+        
+        let parameters = ["lat" : latitude,
+                          "lon" : longitude,
+                          "appid" : APPURL.appid] as [String : Any]
+
+        let headers = ["Content-Type": "application/x-www-form-urlencoded"]
+        
+        Alamofire.request(APPURL.weatherForecastHourly, method: .get, parameters: parameters, headers: headers).responseJSON { response in
+            switch response.result {
+            case .success:
+                
+                if let data = response.data {
+                    let weather = try? JSONDecoder().decode(WeatherHourIndicationsModel.self, from: data)
+                    completionBlock(weather,nil)
+                } else {
+                    let error = NSError.init(domain: response.result.debugDescription, code: 404, userInfo: nil)
+                    completionBlock(nil, error)
+                }
+
             case .failure(let error):
                 if let error = error as NSError? {
                     debugPrint(error)

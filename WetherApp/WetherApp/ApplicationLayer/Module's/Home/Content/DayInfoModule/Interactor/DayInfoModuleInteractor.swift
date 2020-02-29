@@ -20,4 +20,15 @@ final class DayInfoModuleInteractor: DayInfoModuleInteractorInput {
             }
         }
     }
+    
+    func requestHourlyWeatherBy(latitude: Double, andLongitude: Double) {
+        NetworkManager.shared.getWeatherHourlyBy(latitude: latitude, longitude: andLongitude) { [weak self] hourlyWeather, error in
+            if let hourlyWeather = hourlyWeather {
+                self?.output.hourlyWeatherUpdateWith(indications: hourlyWeather)
+            }
+            if let error = error {
+                self?.output.weatherUpdateWith(error: error)
+            }
+        }
+    }
 }

@@ -8,4 +8,5 @@
 
 protocol DayInfoModuleViewInput: class {
     func weatherWasUpdated()
+    func hourlyWeatherWasUpdated()
 }

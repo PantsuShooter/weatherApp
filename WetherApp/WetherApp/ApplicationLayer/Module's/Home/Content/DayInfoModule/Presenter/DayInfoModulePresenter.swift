@@ -16,20 +16,36 @@ final class DayInfoModulePresenter: DayInfoModuleViewOutput {
     var router:     DayInfoModuleRouterInput!
     
     var currentWeather: WeatherIndicationsModel?
+    var hourlyWeather = [WeatherListModel]()
+    
     var currentCoordinate: CLLocationCoordinate2D?
     
     
     func setUpdated(coordinates: CLLocationCoordinate2D) {
         self.currentCoordinate = coordinates
         interactor.requestWeatherBy(latitude: coordinates.latitude, andLongitude: coordinates.longitude)
+        interactor.requestHourlyWeatherBy(latitude: coordinates.latitude, andLongitude: coordinates.longitude)
     }
     
     func getCurrentWeather() -> WeatherIndicationsModel? {
         return currentWeather
     }
+    
+    func getHourlyWeatherCount() -> Int {
+        return hourlyWeather.count
+    }
+    
+    func getHourlyWeatherAt(index: Int) -> WeatherListModel? {
+        return hourlyWeather[index]
+    }
 }
 
 extension DayInfoModulePresenter: DayInfoModuleInteractorOutput {
+    
+    func hourlyWeatherUpdateWith(indications: WeatherHourIndicationsModel) {
+        self.hourlyWeather = indications.weatherList
+        view.hourlyWeatherWasUpdated()
+    }
     
     func weatherUpdateWith(indications: WeatherIndicationsModel) {
         self.currentWeather = indications

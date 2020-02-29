@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -243,26 +242,16 @@
                                     <constraint firstItem="oAX-hx-DlJ" firstAttribute="top" secondItem="aE9-u6-aKf" secondAttribute="top" id="pt8-W0-W4N"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SN4-rN-jWx">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SN4-rN-jWx">
                                 <rect key="frame" x="0.0" y="300" width="414" height="100"/>
                                 <color key="backgroundColor" name="liteBrue"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mwb-KU-o8h">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mwb-KU-o8h">
                                     <size key="itemSize" width="116" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tUQ-Jh-3HV">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I2O-8s-vZi">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="100" height="100"/>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="lbi-bt-UKz"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="w2G-2h-hUU"/>
@@ -286,7 +275,7 @@
                     <navigationItem key="navigationItem" id="jji-uH-Yqx"/>
                     <size key="freeformSize" width="414" height="400"/>
                     <connections>
-                        <outlet property="arrowImage" destination="94G-jL-dSr" id="T7l-in-yU2"/>
+                        <outlet property="arrowImageView" destination="94G-jL-dSr" id="T7l-in-yU2"/>
                         <outlet property="cityNameLabel" destination="zJD-8Y-WTe" id="C78-s8-BjC"/>
                         <outlet property="currentInformationView" destination="aE9-u6-aKf" id="YEf-tr-uxC"/>
                         <outlet property="currentWeatherAnimationView" destination="6rB-UZ-Bmg" id="zYD-q5-F8P"/>

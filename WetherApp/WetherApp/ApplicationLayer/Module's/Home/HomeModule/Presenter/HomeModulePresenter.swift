@@ -16,6 +16,7 @@ final class HomeModulePresenter: HomeModuleViewOutput {
     var router:     HomeModuleRouterInput!
     
     var currentCoordinate: CLLocationCoordinate2D?
+    var lastUpdate: Date?
     
     func startGettingCoordinates() {
         interactor.startRequestLocationCoordinates()
@@ -33,13 +34,26 @@ extension HomeModulePresenter: HomeModuleInteractorOutput {
             return
         }
         
-        guard currentCoordinate.isEqual(coordinate) else {
+        guard !currentCoordinate.isEqual(coordinate) else {
             debugPrint("Coordinates have not changed")
             return
         }
-    
+        
+        guard let lastTimeUpdate = self.lastUpdate else {
+            view.receivedNew(coordinates: coordinate)
+            self.currentCoordinate = coordinate
+            self.lastUpdate = Date()
+            return
+        }
+        
+        guard let diff = Calendar.current.dateComponents([.minute], from: lastTimeUpdate, to: Date()).minute, diff > 15 else {
+            debugPrint("Its no time yet")
+            return
+        }
+        
         view.receivedNew(coordinates: coordinate)
         self.currentCoordinate = coordinate
+        self.lastUpdate = Date()
     }
     
     func coordinatesUpdateWith(error: Error) {

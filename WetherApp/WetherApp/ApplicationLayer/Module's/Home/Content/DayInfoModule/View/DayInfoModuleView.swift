@@ -14,6 +14,14 @@ class DayInfoModuleView: UIViewController {
     
     struct Const {
         static let kelvin: Double = 273.15
+        
+        struct NibName {
+            static let dayInfoCell = "DayInfoCell"
+        }
+        
+        struct Id {
+            static let dayInfoCellID = "dayInfoCellID"
+        }
     }
     
     var output: DayInfoModuleViewOutput!
@@ -27,13 +35,12 @@ class DayInfoModuleView: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var hygrometerLabel: UILabel!
     @IBOutlet weak var windLabel: UILabel!
-    @IBOutlet weak var arrowImage: UIImageView!
+    @IBOutlet weak var arrowImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
-        
     }
 }
 
@@ -43,9 +50,8 @@ extension DayInfoModuleView {
     private func setupUI() {
         
         setupDate()
-        
         updateWeatherViews()
-        
+        registerCell()
     }
     
     private func setupDate() {
@@ -54,6 +60,12 @@ extension DayInfoModuleView {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "E, d MMMM"
         dateLabel.text = dateFormatter.string(from: date)
+    }
+    
+    private func registerCell() {
+        
+        dayTimeCollectionView.register(UINib(nibName: Const.NibName.dayInfoCell, bundle: .main), forCellWithReuseIdentifier: Const.Id.dayInfoCellID)
+        
     }
 }
 
@@ -65,10 +77,10 @@ extension DayInfoModuleView {
         guard let weather = output.getCurrentWeather() else { return }
         
         cityNameLabel.text = weather.name
-        temperatureLabel.text = "\(weather.main.tempMax - Const.kelvin)°/\(weather.main.tempMin - Const.kelvin)°"
+        temperatureLabel.text = "\(Int(weather.main.tempMax - Const.kelvin))°/\(Int(weather.main.tempMin - Const.kelvin))°"
         hygrometerLabel.text = "\(weather.main.humidity)%"
         windLabel.text = "\(Int(weather.wind.speed))m/sec"
-        arrowImage.rotate(angle: CGFloat(weather.wind.deg))
+        arrowImageView.rotate(angle: CGFloat(weather.wind.deg))
         guard let type = WeatheIconName(rawValue: weather.weather[0].icon) else { return }
         setWeatherAnimationBy(type: type)
     }
@@ -77,10 +89,9 @@ extension DayInfoModuleView {
         
         let animation = Animation.named(type.animationLotiJsonName)
         currentWeatherAnimationView.animation = animation
-        currentWeatherAnimationView.backgroundColor = .clear
         currentWeatherAnimationView.loopMode = .loop
+        currentWeatherAnimationView.backgroundBehavior = .pauseAndRestore
         currentWeatherAnimationView.play()
-        
     }
 }
 
@@ -92,25 +103,42 @@ extension DayInfoModuleView {
     }
 }
 
-//MARK:- UICollectionViewDataSource, UICollectionViewDelegate
-extension DayInfoModuleView: UICollectionViewDataSource, UICollectionViewDelegate {
+//MARK:- UICollectionViewDataSource
+extension DayInfoModuleView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        return output.getHourlyWeatherCount()
     }
 }
 
+//MARK:- UICollectionViewDelegate
+extension DayInfoModuleView: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let cell = dayTimeCollectionView.dequeueReusableCell(withReuseIdentifier: Const.Id.dayInfoCellID, for: indexPath) as? DayInfoCell else { return UICollectionViewCell() }
+        
+        guard let model = output.getHourlyWeatherAt(index: indexPath.row) else { return UICollectionViewCell() }
+        
+        
+        cell.weatherAnimationViewHightConstraint.constant = collectionView.frame.height * 0.55
+        cell.weatherAnimationViewWidthConstraint.constant = cell.frame.width
+        
+        cell.setupCellWith(model: model)
+        
+        return cell
+    }
+}
+
+
 extension DayInfoModuleView: DayInfoModuleViewInput {
+    
+    func hourlyWeatherWasUpdated() {
+        dayTimeCollectionView.reloadData()
+    }
     
     func weatherWasUpdated() {
         
         updateWeatherViews()
-        
-//        let wether = output.getCurrentWeather()
-//        debugPrint(wether)
     }
 }
